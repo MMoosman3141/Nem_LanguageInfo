@@ -1,0 +1,1810 @@
+﻿[
+  {
+    "code": "Adlm",
+    "number": 166,
+    "englishName": "Adlam",
+    "alias": "Adlam",
+    "age": 9,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Afak",
+    "number": 439,
+    "englishName": "Afaka",
+    "alias": "",
+    "age": 0,
+    "date": "2010-12-21T00:00:00"
+  },
+  {
+    "code": "Aghb",
+    "number": 239,
+    "englishName": "Caucasian Albanian",
+    "alias": "Caucasian_Albanian",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Ahom",
+    "number": 338,
+    "englishName": "Ahom, Tai Ahom",
+    "alias": "Ahom",
+    "age": 8,
+    "date": "2015-07-07T00:00:00"
+  },
+  {
+    "code": "Arab",
+    "number": 160,
+    "englishName": "Arabic",
+    "alias": "Arabic",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Aran",
+    "number": 161,
+    "englishName": "Arabic (Nastaliq variant)",
+    "alias": "",
+    "age": 1,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Armi",
+    "number": 124,
+    "englishName": "Imperial Aramaic",
+    "alias": "Imperial_Aramaic",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Armn",
+    "number": 230,
+    "englishName": "Armenian",
+    "alias": "Armenian",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Avst",
+    "number": 134,
+    "englishName": "Avestan",
+    "alias": "Avestan",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Bali",
+    "number": 360,
+    "englishName": "Balinese",
+    "alias": "Balinese",
+    "age": 5,
+    "date": "2006-10-10T00:00:00"
+  },
+  {
+    "code": "Bamu",
+    "number": 435,
+    "englishName": "Bamum",
+    "alias": "Bamum",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Bass",
+    "number": 259,
+    "englishName": "Bassa Vah",
+    "alias": "Bassa_Vah",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Batk",
+    "number": 365,
+    "englishName": "Batak",
+    "alias": "Batak",
+    "age": 6,
+    "date": "2010-07-23T00:00:00"
+  },
+  {
+    "code": "Beng",
+    "number": 325,
+    "englishName": "Bengali (Bangla)",
+    "alias": "Bengali",
+    "age": 1,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Berf",
+    "number": 258,
+    "englishName": "Beria Erfe",
+    "alias": "",
+    "age": 0,
+    "date": "2025-01-06T00:00:00"
+  },
+  {
+    "code": "Bhks",
+    "number": 334,
+    "englishName": "Bhaiksuki",
+    "alias": "Bhaiksuki",
+    "age": 9,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Blis",
+    "number": 550,
+    "englishName": "Blissymbols",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Bopo",
+    "number": 285,
+    "englishName": "Bopomofo",
+    "alias": "Bopomofo",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Brah",
+    "number": 300,
+    "englishName": "Brahmi",
+    "alias": "Brahmi",
+    "age": 6,
+    "date": "2010-07-23T00:00:00"
+  },
+  {
+    "code": "Brai",
+    "number": 570,
+    "englishName": "Braille",
+    "alias": "Braille",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Bugi",
+    "number": 367,
+    "englishName": "Buginese",
+    "alias": "Buginese",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Buhd",
+    "number": 372,
+    "englishName": "Buhid",
+    "alias": "Buhid",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Cakm",
+    "number": 349,
+    "englishName": "Chakma",
+    "alias": "Chakma",
+    "age": 6,
+    "date": "2012-02-06T00:00:00"
+  },
+  {
+    "code": "Cans",
+    "number": 440,
+    "englishName": "Unified Canadian Aboriginal Syllabics",
+    "alias": "Canadian_Aboriginal",
+    "age": 3,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Cari",
+    "number": 201,
+    "englishName": "Carian",
+    "alias": "Carian",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Cham",
+    "number": 358,
+    "englishName": "Cham",
+    "alias": "Cham",
+    "age": 5,
+    "date": "2009-11-11T00:00:00"
+  },
+  {
+    "code": "Cher",
+    "number": 445,
+    "englishName": "Cherokee",
+    "alias": "Cherokee",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Chis",
+    "number": 298,
+    "englishName": "Chisoi",
+    "alias": "",
+    "age": 0,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Chrs",
+    "number": 109,
+    "englishName": "Chorasmian",
+    "alias": "Chorasmian",
+    "age": 13,
+    "date": "2019-08-19T00:00:00"
+  },
+  {
+    "code": "Cirt",
+    "number": 291,
+    "englishName": "Cirth",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Copt",
+    "number": 204,
+    "englishName": "Coptic",
+    "alias": "Coptic",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Cpmn",
+    "number": 402,
+    "englishName": "Cypro-Minoan",
+    "alias": "Cypro_Minoan",
+    "age": 14,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Cprt",
+    "number": 403,
+    "englishName": "Cypriot syllabary",
+    "alias": "Cypriot",
+    "age": 4,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Cyrl",
+    "number": 220,
+    "englishName": "Cyrillic",
+    "alias": "Cyrillic",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Cyrs",
+    "number": 221,
+    "englishName": "Cyrillic (Old Church Slavonic variant)",
+    "alias": "",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Deva",
+    "number": 315,
+    "englishName": "Devanagari (Nagari)",
+    "alias": "Devanagari",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Diak",
+    "number": 342,
+    "englishName": "Dives Akuru",
+    "alias": "Dives_Akuru",
+    "age": 13,
+    "date": "2019-08-19T00:00:00"
+  },
+  {
+    "code": "Dogr",
+    "number": 328,
+    "englishName": "Dogra",
+    "alias": "Dogra",
+    "age": 11,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Dsrt",
+    "number": 250,
+    "englishName": "Deseret (Mormon)",
+    "alias": "Deseret",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Dupl",
+    "number": 755,
+    "englishName": "Duployan shorthand, Duployan stenography",
+    "alias": "Duployan",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Egyd",
+    "number": 70,
+    "englishName": "Egyptian demotic",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Egyh",
+    "number": 60,
+    "englishName": "Egyptian hieratic",
+    "alias": "",
+    "age": 5,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Egyp",
+    "number": 50,
+    "englishName": "Egyptian hieroglyphs",
+    "alias": "Egyptian_Hieroglyphs",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Elba",
+    "number": 226,
+    "englishName": "Elbasan",
+    "alias": "Elbasan",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Elym",
+    "number": 128,
+    "englishName": "Elymaic",
+    "alias": "Elymaic",
+    "age": 12,
+    "date": "2018-08-26T00:00:00"
+  },
+  {
+    "code": "Ethi",
+    "number": 430,
+    "englishName": "Ethiopic (Geʻez)",
+    "alias": "Ethiopic",
+    "age": 3,
+    "date": "2004-10-25T00:00:00"
+  },
+  {
+    "code": "Gara",
+    "number": 164,
+    "englishName": "Garay",
+    "alias": "Garay",
+    "age": 16,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Geok",
+    "number": 241,
+    "englishName": "Khutsuri (Asomtavruli and Nuskhuri)",
+    "alias": "Georgian",
+    "age": 1,
+    "date": "2012-10-16T00:00:00"
+  },
+  {
+    "code": "Geor",
+    "number": 240,
+    "englishName": "Georgian (Mkhedruli and Mtavruli)",
+    "alias": "Georgian",
+    "age": 1,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Glag",
+    "number": 225,
+    "englishName": "Glagolitic",
+    "alias": "Glagolitic",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Gong",
+    "number": 312,
+    "englishName": "Gunjala Gondi",
+    "alias": "Gunjala_Gondi",
+    "age": 11,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Gonm",
+    "number": 313,
+    "englishName": "Masaram Gondi",
+    "alias": "Masaram_Gondi",
+    "age": 10,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Goth",
+    "number": 206,
+    "englishName": "Gothic",
+    "alias": "Gothic",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Gran",
+    "number": 343,
+    "englishName": "Grantha",
+    "alias": "Grantha",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Grek",
+    "number": 200,
+    "englishName": "Greek",
+    "alias": "Greek",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Gujr",
+    "number": 320,
+    "englishName": "Gujarati",
+    "alias": "Gujarati",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Gukh",
+    "number": 397,
+    "englishName": "Gurung Khema",
+    "alias": "Gurung_Khema",
+    "age": 16,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Guru",
+    "number": 310,
+    "englishName": "Gurmukhi",
+    "alias": "Gurmukhi",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Hanb",
+    "number": 503,
+    "englishName": "Han with Bopomofo (alias for Han + Bopomofo)",
+    "alias": "",
+    "age": 1,
+    "date": "2016-01-19T00:00:00"
+  },
+  {
+    "code": "Hang",
+    "number": 286,
+    "englishName": "Hangul (Hangŭl, Hangeul)",
+    "alias": "Hangul",
+    "age": 1,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Hani",
+    "number": 500,
+    "englishName": "Han (Hanzi, Kanji, Hanja)",
+    "alias": "Han",
+    "age": 1,
+    "date": "2009-02-23T00:00:00"
+  },
+  {
+    "code": "Hano",
+    "number": 371,
+    "englishName": "Hanunoo (Hanunóo)",
+    "alias": "Hanunoo",
+    "age": 3,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Hans",
+    "number": 501,
+    "englishName": "Han (Simplified variant)",
+    "alias": "",
+    "age": 1,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Hant",
+    "number": 502,
+    "englishName": "Han (Traditional variant)",
+    "alias": "",
+    "age": 1,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Hatr",
+    "number": 127,
+    "englishName": "Hatran",
+    "alias": "Hatran",
+    "age": 8,
+    "date": "2015-07-07T00:00:00"
+  },
+  {
+    "code": "Hebr",
+    "number": 125,
+    "englishName": "Hebrew",
+    "alias": "Hebrew",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Hira",
+    "number": 410,
+    "englishName": "Hiragana",
+    "alias": "Hiragana",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Hluw",
+    "number": 80,
+    "englishName": "Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)",
+    "alias": "Anatolian_Hieroglyphs",
+    "age": 8,
+    "date": "2015-07-07T00:00:00"
+  },
+  {
+    "code": "Hmng",
+    "number": 450,
+    "englishName": "Pahawh Hmong",
+    "alias": "Pahawh_Hmong",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Hmnp",
+    "number": 451,
+    "englishName": "Nyiakeng Puachue Hmong",
+    "alias": "Nyiakeng_Puachue_Hmong",
+    "age": 12,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Hntl",
+    "number": 504,
+    "englishName": "Han (Traditional variant) with Latin (alias for Hant + Latn)",
+    "alias": "",
+    "age": 0,
+    "date": "2025-04-24T00:00:00"
+  },
+  {
+    "code": "Hrkt",
+    "number": 412,
+    "englishName": "Japanese syllabaries (alias for Hiragana + Katakana)",
+    "alias": "Katakana_Or_Hiragana",
+    "age": 1,
+    "date": "2011-06-21T00:00:00"
+  },
+  {
+    "code": "Hung",
+    "number": 176,
+    "englishName": "Old Hungarian (Hungarian Runic)",
+    "alias": "Old_Hungarian",
+    "age": 8,
+    "date": "2015-07-07T00:00:00"
+  },
+  {
+    "code": "Inds",
+    "number": 610,
+    "englishName": "Indus (Harappan)",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Ital",
+    "number": 210,
+    "englishName": "Old Italic (Etruscan, Oscan, etc.)",
+    "alias": "Old_Italic",
+    "age": 3,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Jamo",
+    "number": 284,
+    "englishName": "Jamo (alias for Jamo subset of Hangul)",
+    "alias": "",
+    "age": 1,
+    "date": "2016-01-19T00:00:00"
+  },
+  {
+    "code": "Java",
+    "number": 361,
+    "englishName": "Javanese",
+    "alias": "Javanese",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Jpan",
+    "number": 413,
+    "englishName": "Japanese (alias for Han + Hiragana + Katakana)",
+    "alias": "",
+    "age": 1,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Jurc",
+    "number": 510,
+    "englishName": "Jurchen",
+    "alias": "",
+    "age": 0,
+    "date": "2010-12-21T00:00:00"
+  },
+  {
+    "code": "Kali",
+    "number": 357,
+    "englishName": "Kayah Li",
+    "alias": "Kayah_Li",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Kana",
+    "number": 411,
+    "englishName": "Katakana",
+    "alias": "Katakana",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Kawi",
+    "number": 368,
+    "englishName": "Kawi",
+    "alias": "Kawi",
+    "age": 15,
+    "date": "2021-12-03T00:00:00"
+  },
+  {
+    "code": "Khar",
+    "number": 305,
+    "englishName": "Kharoshthi",
+    "alias": "Kharoshthi",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Khmr",
+    "number": 355,
+    "englishName": "Khmer",
+    "alias": "Khmer",
+    "age": 3,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Khoj",
+    "number": 322,
+    "englishName": "Khojki",
+    "alias": "Khojki",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Kitl",
+    "number": 505,
+    "englishName": "Khitan large script",
+    "alias": "",
+    "age": 0,
+    "date": "2015-07-15T00:00:00"
+  },
+  {
+    "code": "Kits",
+    "number": 288,
+    "englishName": "Khitan small script",
+    "alias": "Khitan_Small_Script",
+    "age": 13,
+    "date": "2015-07-15T00:00:00"
+  },
+  {
+    "code": "Knda",
+    "number": 345,
+    "englishName": "Kannada",
+    "alias": "Kannada",
+    "age": 1,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Kore",
+    "number": 287,
+    "englishName": "Korean (alias for Hangul + Han)",
+    "alias": "",
+    "age": 1,
+    "date": "2007-06-13T00:00:00"
+  },
+  {
+    "code": "Kpel",
+    "number": 436,
+    "englishName": "Kpelle",
+    "alias": "",
+    "age": 0,
+    "date": "2010-03-26T00:00:00"
+  },
+  {
+    "code": "Krai",
+    "number": 396,
+    "englishName": "Kirat Rai",
+    "alias": "Kirat_Rai",
+    "age": 16,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Kthi",
+    "number": 317,
+    "englishName": "Kaithi",
+    "alias": "Kaithi",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Lana",
+    "number": 351,
+    "englishName": "Tai Tham (Lanna)",
+    "alias": "Tai_Tham",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Laoo",
+    "number": 356,
+    "englishName": "Lao",
+    "alias": "Lao",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Latf",
+    "number": 217,
+    "englishName": "Latin (Fraktur variant)",
+    "alias": "",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Latg",
+    "number": 216,
+    "englishName": "Latin (Gaelic variant)",
+    "alias": "",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Latn",
+    "number": 215,
+    "englishName": "Latin",
+    "alias": "Latin",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Leke",
+    "number": 364,
+    "englishName": "Leke",
+    "alias": "",
+    "age": 0,
+    "date": "2015-07-07T00:00:00"
+  },
+  {
+    "code": "Lepc",
+    "number": 335,
+    "englishName": "Lepcha (Róng)",
+    "alias": "Lepcha",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Limb",
+    "number": 336,
+    "englishName": "Limbu",
+    "alias": "Limbu",
+    "age": 4,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Lina",
+    "number": 400,
+    "englishName": "Linear A",
+    "alias": "Linear_A",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Linb",
+    "number": 401,
+    "englishName": "Linear B",
+    "alias": "Linear_B",
+    "age": 4,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Lisu",
+    "number": 399,
+    "englishName": "Lisu (Fraser)",
+    "alias": "Lisu",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Loma",
+    "number": 437,
+    "englishName": "Loma",
+    "alias": "",
+    "age": 0,
+    "date": "2010-03-26T00:00:00"
+  },
+  {
+    "code": "Lyci",
+    "number": 202,
+    "englishName": "Lycian",
+    "alias": "Lycian",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Lydi",
+    "number": 116,
+    "englishName": "Lydian",
+    "alias": "Lydian",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Mahj",
+    "number": 314,
+    "englishName": "Mahajani",
+    "alias": "Mahajani",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Maka",
+    "number": 366,
+    "englishName": "Makasar",
+    "alias": "Makasar",
+    "age": 11,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Mand",
+    "number": 140,
+    "englishName": "Mandaic, Mandaean",
+    "alias": "Mandaic",
+    "age": 6,
+    "date": "2010-07-23T00:00:00"
+  },
+  {
+    "code": "Mani",
+    "number": 139,
+    "englishName": "Manichaean",
+    "alias": "Manichaean",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Marc",
+    "number": 332,
+    "englishName": "Marchen",
+    "alias": "Marchen",
+    "age": 9,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Maya",
+    "number": 90,
+    "englishName": "Mayan hieroglyphs",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Medf",
+    "number": 265,
+    "englishName": "Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)",
+    "alias": "Medefaidrin",
+    "age": 11,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Mend",
+    "number": 438,
+    "englishName": "Mende Kikakui",
+    "alias": "Mende_Kikakui",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Merc",
+    "number": 101,
+    "englishName": "Meroitic Cursive",
+    "alias": "Meroitic_Cursive",
+    "age": 6,
+    "date": "2012-02-06T00:00:00"
+  },
+  {
+    "code": "Mero",
+    "number": 100,
+    "englishName": "Meroitic Hieroglyphs",
+    "alias": "Meroitic_Hieroglyphs",
+    "age": 6,
+    "date": "2012-02-06T00:00:00"
+  },
+  {
+    "code": "Mlym",
+    "number": 347,
+    "englishName": "Malayalam",
+    "alias": "Malayalam",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Modi",
+    "number": 324,
+    "englishName": "Modi, Moḍī",
+    "alias": "Modi",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Mong",
+    "number": 145,
+    "englishName": "Mongolian",
+    "alias": "Mongolian",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Moon",
+    "number": 218,
+    "englishName": "Moon (Moon code, Moon script, Moon type)",
+    "alias": "",
+    "age": 0,
+    "date": "2006-12-11T00:00:00"
+  },
+  {
+    "code": "Mroo",
+    "number": 264,
+    "englishName": "Mro, Mru",
+    "alias": "Mro",
+    "age": 7,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Mtei",
+    "number": 337,
+    "englishName": "Meitei Mayek (Meithei, Meetei)",
+    "alias": "Meetei_Mayek",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Mult",
+    "number": 323,
+    "englishName": "Multani",
+    "alias": "Multani",
+    "age": 8,
+    "date": "2015-07-07T00:00:00"
+  },
+  {
+    "code": "Mymr",
+    "number": 350,
+    "englishName": "Myanmar (Burmese)",
+    "alias": "Myanmar",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Nagm",
+    "number": 295,
+    "englishName": "Nag Mundari",
+    "alias": "Nag_Mundari",
+    "age": 15,
+    "date": "2021-12-03T00:00:00"
+  },
+  {
+    "code": "Nand",
+    "number": 311,
+    "englishName": "Nandinagari",
+    "alias": "Nandinagari",
+    "age": 12,
+    "date": "2018-08-26T00:00:00"
+  },
+  {
+    "code": "Narb",
+    "number": 106,
+    "englishName": "Old North Arabian (Ancient North Arabian)",
+    "alias": "Old_North_Arabian",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Nbat",
+    "number": 159,
+    "englishName": "Nabataean",
+    "alias": "Nabataean",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Newa",
+    "number": 333,
+    "englishName": "Newa, Newar, Newari, Nepāla lipi",
+    "alias": "Newa",
+    "age": 9,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Nkdb",
+    "number": 85,
+    "englishName": "Naxi Dongba (na²¹ɕi³³ to³³ba²¹, Nakhi Tomba)",
+    "alias": "",
+    "age": 0,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Nkgb",
+    "number": 420,
+    "englishName": "Naxi Geba (na²¹ɕi³³ gʌ²¹ba²¹, 'Na-'Khi ²Ggŏ-¹baw, Nakhi Geba)",
+    "alias": "",
+    "age": 0,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Nkoo",
+    "number": 165,
+    "englishName": "N’Ko",
+    "alias": "Nko",
+    "age": 5,
+    "date": "2006-10-10T00:00:00"
+  },
+  {
+    "code": "Nshu",
+    "number": 499,
+    "englishName": "Nüshu",
+    "alias": "Nushu",
+    "age": 10,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Ogam",
+    "number": 212,
+    "englishName": "Ogham",
+    "alias": "Ogham",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Olck",
+    "number": 261,
+    "englishName": "Ol Chiki (Ol Cemet’, Ol, Santali)",
+    "alias": "Ol_Chiki",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Onao",
+    "number": 296,
+    "englishName": "Ol Onal",
+    "alias": "Ol_Onal",
+    "age": 16,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Orkh",
+    "number": 175,
+    "englishName": "Old Turkic, Orkhon Runic",
+    "alias": "Old_Turkic",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Orya",
+    "number": 327,
+    "englishName": "Oriya (Odia)",
+    "alias": "Oriya",
+    "age": 1,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Osge",
+    "number": 219,
+    "englishName": "Osage",
+    "alias": "Osage",
+    "age": 9,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Osma",
+    "number": 260,
+    "englishName": "Osmanya",
+    "alias": "Osmanya",
+    "age": 4,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Ougr",
+    "number": 143,
+    "englishName": "Old Uyghur",
+    "alias": "Old_Uyghur",
+    "age": 14,
+    "date": "2021-01-25T00:00:00"
+  },
+  {
+    "code": "Palm",
+    "number": 126,
+    "englishName": "Palmyrene",
+    "alias": "Palmyrene",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Pauc",
+    "number": 263,
+    "englishName": "Pau Cin Hau",
+    "alias": "Pau_Cin_Hau",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Pcun",
+    "number": 15,
+    "englishName": "Proto-Cuneiform",
+    "alias": "",
+    "age": 0,
+    "date": "2021-01-25T00:00:00"
+  },
+  {
+    "code": "Pelm",
+    "number": 16,
+    "englishName": "Proto-Elamite",
+    "alias": "",
+    "age": 0,
+    "date": "2021-01-25T00:00:00"
+  },
+  {
+    "code": "Perm",
+    "number": 227,
+    "englishName": "Old Permic",
+    "alias": "Old_Permic",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Phag",
+    "number": 331,
+    "englishName": "Phags-pa",
+    "alias": "Phags_Pa",
+    "age": 5,
+    "date": "2006-10-10T00:00:00"
+  },
+  {
+    "code": "Phli",
+    "number": 131,
+    "englishName": "Inscriptional Pahlavi",
+    "alias": "Inscriptional_Pahlavi",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Phlp",
+    "number": 132,
+    "englishName": "Psalter Pahlavi",
+    "alias": "Psalter_Pahlavi",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Phlv",
+    "number": 133,
+    "englishName": "Book Pahlavi",
+    "alias": "",
+    "age": 0,
+    "date": "2007-07-15T00:00:00"
+  },
+  {
+    "code": "Phnx",
+    "number": 115,
+    "englishName": "Phoenician",
+    "alias": "Phoenician",
+    "age": 5,
+    "date": "2006-10-10T00:00:00"
+  },
+  {
+    "code": "Plrd",
+    "number": 282,
+    "englishName": "Miao (Pollard)",
+    "alias": "Miao",
+    "age": 6,
+    "date": "2012-02-06T00:00:00"
+  },
+  {
+    "code": "Piqd",
+    "number": 293,
+    "englishName": "Klingon (KLI pIqaD)",
+    "alias": "",
+    "age": 0,
+    "date": "2015-12-16T00:00:00"
+  },
+  {
+    "code": "Prti",
+    "number": 130,
+    "englishName": "Inscriptional Parthian",
+    "alias": "Inscriptional_Parthian",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Psin",
+    "number": 103,
+    "englishName": "Proto-Sinaitic",
+    "alias": "",
+    "age": 0,
+    "date": "2021-01-25T00:00:00"
+  },
+  {
+    "code": "Qaaa",
+    "number": 900,
+    "englishName": "Reserved for private use (start)",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Qabx",
+    "number": 949,
+    "englishName": "Reserved for private use (end)",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Ranj",
+    "number": 303,
+    "englishName": "Ranjana",
+    "alias": "",
+    "age": 0,
+    "date": "2021-01-25T00:00:00"
+  },
+  {
+    "code": "Rjng",
+    "number": 363,
+    "englishName": "Rejang (Redjang, Kaganga)",
+    "alias": "Rejang",
+    "age": 5,
+    "date": "2009-02-23T00:00:00"
+  },
+  {
+    "code": "Rohg",
+    "number": 167,
+    "englishName": "Hanifi Rohingya",
+    "alias": "Hanifi_Rohingya",
+    "age": 11,
+    "date": "2017-11-21T00:00:00"
+  },
+  {
+    "code": "Roro",
+    "number": 620,
+    "englishName": "Rongorongo",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Runr",
+    "number": 211,
+    "englishName": "Runic",
+    "alias": "Runic",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Samr",
+    "number": 123,
+    "englishName": "Samaritan",
+    "alias": "Samaritan",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Sara",
+    "number": 292,
+    "englishName": "Sarati",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Sarb",
+    "number": 105,
+    "englishName": "Old South Arabian",
+    "alias": "Old_South_Arabian",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Saur",
+    "number": 344,
+    "englishName": "Saurashtra",
+    "alias": "Saurashtra",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Seal",
+    "number": 590,
+    "englishName": "(Small) Seal",
+    "alias": "",
+    "age": 0,
+    "date": "2025-04-24T00:00:00"
+  },
+  {
+    "code": "Sgnw",
+    "number": 95,
+    "englishName": "SignWriting",
+    "alias": "SignWriting",
+    "age": 8,
+    "date": "2015-07-07T00:00:00"
+  },
+  {
+    "code": "Shaw",
+    "number": 281,
+    "englishName": "Shavian (Shaw)",
+    "alias": "Shavian",
+    "age": 4,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Shrd",
+    "number": 319,
+    "englishName": "Sharada, Śāradā",
+    "alias": "Sharada",
+    "age": 6,
+    "date": "2012-02-06T00:00:00"
+  },
+  {
+    "code": "Shui",
+    "number": 530,
+    "englishName": "Shuishu",
+    "alias": "",
+    "age": 0,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Sidd",
+    "number": 302,
+    "englishName": "Siddham, Siddhaṃ, Siddhamātṛkā",
+    "alias": "Siddham",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Sidt",
+    "number": 180,
+    "englishName": "Sidetic",
+    "alias": "",
+    "age": 0,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Sind",
+    "number": 318,
+    "englishName": "Khudawadi, Sindhi",
+    "alias": "Khudawadi",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Sinh",
+    "number": 348,
+    "englishName": "Sinhala",
+    "alias": "Sinhala",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Sogd",
+    "number": 141,
+    "englishName": "Sogdian",
+    "alias": "Sogdian",
+    "age": 11,
+    "date": "2017-11-21T00:00:00"
+  },
+  {
+    "code": "Sogo",
+    "number": 142,
+    "englishName": "Old Sogdian",
+    "alias": "Old_Sogdian",
+    "age": 11,
+    "date": "2017-11-21T00:00:00"
+  },
+  {
+    "code": "Sora",
+    "number": 398,
+    "englishName": "Sora Sompeng",
+    "alias": "Sora_Sompeng",
+    "age": 6,
+    "date": "2012-02-06T00:00:00"
+  },
+  {
+    "code": "Soyo",
+    "number": 329,
+    "englishName": "Soyombo",
+    "alias": "Soyombo",
+    "age": 10,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Sund",
+    "number": 362,
+    "englishName": "Sundanese",
+    "alias": "Sundanese",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Sunu",
+    "number": 274,
+    "englishName": "Sunuwar",
+    "alias": "Sunuwar",
+    "age": 16,
+    "date": "2021-12-03T00:00:00"
+  },
+  {
+    "code": "Sylo",
+    "number": 316,
+    "englishName": "Syloti Nagri",
+    "alias": "Syloti_Nagri",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Syrc",
+    "number": 135,
+    "englishName": "Syriac",
+    "alias": "Syriac",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Syre",
+    "number": 138,
+    "englishName": "Syriac (Estrangelo variant)",
+    "alias": "",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Syrj",
+    "number": 137,
+    "englishName": "Syriac (Western variant)",
+    "alias": "",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Syrn",
+    "number": 136,
+    "englishName": "Syriac (Eastern variant)",
+    "alias": "",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Tagb",
+    "number": 373,
+    "englishName": "Tagbanwa",
+    "alias": "Tagbanwa",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Takr",
+    "number": 321,
+    "englishName": "Takri, Ṭākrī, Ṭāṅkrī",
+    "alias": "Takri",
+    "age": 6,
+    "date": "2012-02-06T00:00:00"
+  },
+  {
+    "code": "Tale",
+    "number": 353,
+    "englishName": "Tai Le",
+    "alias": "Tai_Le",
+    "age": 4,
+    "date": "2004-10-25T00:00:00"
+  },
+  {
+    "code": "Talu",
+    "number": 354,
+    "englishName": "New Tai Lue",
+    "alias": "New_Tai_Lue",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Taml",
+    "number": 346,
+    "englishName": "Tamil",
+    "alias": "Tamil",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Tang",
+    "number": 520,
+    "englishName": "Tangut",
+    "alias": "Tangut",
+    "age": 9,
+    "date": "2016-12-05T00:00:00"
+  },
+  {
+    "code": "Tavt",
+    "number": 359,
+    "englishName": "Tai Viet",
+    "alias": "Tai_Viet",
+    "age": 5,
+    "date": "2009-06-01T00:00:00"
+  },
+  {
+    "code": "Tayo",
+    "number": 380,
+    "englishName": "Tai Yo",
+    "alias": "",
+    "age": 0,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Telu",
+    "number": 340,
+    "englishName": "Telugu",
+    "alias": "Telugu",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Teng",
+    "number": 290,
+    "englishName": "Tengwar",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Tfng",
+    "number": 120,
+    "englishName": "Tifinagh (Berber)",
+    "alias": "Tifinagh",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Tglg",
+    "number": 370,
+    "englishName": "Tagalog (Baybayin, Alibata)",
+    "alias": "Tagalog",
+    "age": 3,
+    "date": "2009-02-23T00:00:00"
+  },
+  {
+    "code": "Thaa",
+    "number": 170,
+    "englishName": "Thaana",
+    "alias": "Thaana",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Thai",
+    "number": 352,
+    "englishName": "Thai",
+    "alias": "Thai",
+    "age": 1,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Tibt",
+    "number": 330,
+    "englishName": "Tibetan",
+    "alias": "Tibetan",
+    "age": 2,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Tirh",
+    "number": 326,
+    "englishName": "Tirhuta",
+    "alias": "Tirhuta",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Tnsa",
+    "number": 275,
+    "englishName": "Tangsa",
+    "alias": "Tangsa",
+    "age": 14,
+    "date": "2021-02-17T00:00:00"
+  },
+  {
+    "code": "Todr",
+    "number": 229,
+    "englishName": "Todhri",
+    "alias": "Todhri",
+    "age": 16,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Tols",
+    "number": 299,
+    "englishName": "Tolong Siki",
+    "alias": "",
+    "age": 0,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Toto",
+    "number": 294,
+    "englishName": "Toto",
+    "alias": "Toto",
+    "age": 14,
+    "date": "2020-04-16T00:00:00"
+  },
+  {
+    "code": "Tutg",
+    "number": 341,
+    "englishName": "Tulu-Tigalari",
+    "alias": "Tulu_Tigalari",
+    "age": 16,
+    "date": "2023-09-12T00:00:00"
+  },
+  {
+    "code": "Ugar",
+    "number": 40,
+    "englishName": "Ugaritic",
+    "alias": "Ugaritic",
+    "age": 4,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Vaii",
+    "number": 470,
+    "englishName": "Vai",
+    "alias": "Vai",
+    "age": 5,
+    "date": "2007-07-02T00:00:00"
+  },
+  {
+    "code": "Visp",
+    "number": 280,
+    "englishName": "Visible Speech",
+    "alias": "",
+    "age": 0,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Vith",
+    "number": 228,
+    "englishName": "Vithkuqi",
+    "alias": "Vithkuqi",
+    "age": 14,
+    "date": "2021-02-17T00:00:00"
+  },
+  {
+    "code": "Wara",
+    "number": 262,
+    "englishName": "Warang Citi (Varang Kshiti)",
+    "alias": "Warang_Citi",
+    "age": 7,
+    "date": "2014-11-15T00:00:00"
+  },
+  {
+    "code": "Wcho",
+    "number": 283,
+    "englishName": "Wancho",
+    "alias": "Wancho",
+    "age": 12,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Wole",
+    "number": 480,
+    "englishName": "Woleai",
+    "alias": "",
+    "age": 0,
+    "date": "2010-12-21T00:00:00"
+  },
+  {
+    "code": "Xpeo",
+    "number": 30,
+    "englishName": "Old Persian",
+    "alias": "Old_Persian",
+    "age": 4,
+    "date": "2006-06-21T00:00:00"
+  },
+  {
+    "code": "Xsux",
+    "number": 20,
+    "englishName": "Cuneiform, Sumero-Akkadian",
+    "alias": "Cuneiform",
+    "age": 5,
+    "date": "2006-10-10T00:00:00"
+  },
+  {
+    "code": "Yezi",
+    "number": 192,
+    "englishName": "Yezidi",
+    "alias": "Yezidi",
+    "age": 13,
+    "date": "2019-08-19T00:00:00"
+  },
+  {
+    "code": "Yiii",
+    "number": 460,
+    "englishName": "Yi",
+    "alias": "Yi",
+    "age": 3,
+    "date": "2004-05-01T00:00:00"
+  },
+  {
+    "code": "Zanb",
+    "number": 339,
+    "englishName": "Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)",
+    "alias": "Zanabazar_Square",
+    "age": 10,
+    "date": "2017-07-26T00:00:00"
+  },
+  {
+    "code": "Zinh",
+    "number": 994,
+    "englishName": "Code for inherited script",
+    "alias": "Inherited",
+    "age": 0,
+    "date": "2009-02-23T00:00:00"
+  },
+  {
+    "code": "Zmth",
+    "number": 995,
+    "englishName": "Mathematical notation",
+    "alias": "",
+    "age": 3,
+    "date": "2007-11-26T00:00:00"
+  },
+  {
+    "code": "Zsye",
+    "number": 993,
+    "englishName": "Symbols (Emoji variant)",
+    "alias": "",
+    "age": 6,
+    "date": "2015-12-16T00:00:00"
+  },
+  {
+    "code": "Zsym",
+    "number": 996,
+    "englishName": "Symbols",
+    "alias": "",
+    "age": 1,
+    "date": "2007-11-26T00:00:00"
+  },
+  {
+    "code": "Zxxx",
+    "number": 997,
+    "englishName": "Code for unwritten documents",
+    "alias": "",
+    "age": 0,
+    "date": "2011-06-21T00:00:00"
+  },
+  {
+    "code": "Zyyy",
+    "number": 998,
+    "englishName": "Code for undetermined script",
+    "alias": "Common",
+    "age": 0,
+    "date": "2004-05-29T00:00:00"
+  },
+  {
+    "code": "Zzzz",
+    "number": 999,
+    "englishName": "Code for uncoded script",
+    "alias": "Unknown",
+    "age": 0,
+    "date": "2006-10-10T00:00:00"
+  }
+]

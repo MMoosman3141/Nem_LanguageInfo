@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\iso-15924.json" />
+    <None Remove="Data\iso-639-3.json" />
+    <None Remove="Data\ISO_3166.json" />
+    <None Remove="Data\un-m49.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\iso-15924.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\iso-639-3.json" />
+    <EmbeddedResource Include="Data\ISO_3166.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\un-m49.json" />
+  </ItemGroup>
+
+</Project>
