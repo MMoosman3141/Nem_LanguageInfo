@@ -9,7 +9,7 @@ namespace Nem_LanguageInfo {
     public int Number { get; set; }
 
     [JsonPropertyName("englishName")]
-    public string NameName { get; set; }
+    public string Name { get; set; }
 
     [JsonPropertyName("alias")]
     public string Alias { get; set; }

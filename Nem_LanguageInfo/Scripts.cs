@@ -29,7 +29,7 @@ public class Scripts {
 
     foreach (Script script in data) {
       _scriptsByCode[script.Code] = script;
-      _scriptsByName[script.NameName] = script;
+      _scriptsByName[script.Name] = script;
       _scriptsByName.TryAdd(script.Alias, script);
       _scriptsByNumber[script.Number] = script;
     }
