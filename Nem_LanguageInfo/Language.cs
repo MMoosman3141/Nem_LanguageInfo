@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace Nem_LanguageInfo {
   public class Language {
-    public string Name {get; set;}
+    public string Name { get; set; }
     public string Part1Code { get; set; }
     public string Part2TCode { get; set; }
     public string Part2BCode { get; set; }
@@ -16,6 +12,9 @@ namespace Nem_LanguageInfo {
     public string Comment { get; set; }
     public string DefaultScript { get; set; }
     public List<string> Aliases { get; set; } = [];
-  
-}
+
+    [JsonIgnore]
+    public Script Script { get => Scripts.Instance.GetFromCode(DefaultScript); }
+
+  }
 }
