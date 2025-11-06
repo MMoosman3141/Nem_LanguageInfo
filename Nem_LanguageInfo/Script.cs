@@ -1,32 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace Nem_LanguageInfo {
-    public class Script
-    {
-        [JsonPropertyName("code")]
-        public string Code { get; set; }
+  public class Script {
+    [JsonPropertyName("code")]
+    public string Code { get; internal set; }
 
-        [JsonPropertyName("number")]
-        public int Number { get; set; }
+    [JsonPropertyName("number")]
+    public int Number { get; internal set; }
 
-        [JsonPropertyName("englishName")]
-        public string EnglishName { get; set; }
+    [JsonPropertyName("englishName")]
+    public string Name { get; internal set; }
 
-        [JsonPropertyName("alias")]
-        public string Alias { get; set; }
+    [JsonPropertyName("alias")]
+    public string Alias { get; internal set; }
 
-        [JsonPropertyName("age")]
-        public int Age { get; set; }
+    [JsonPropertyName("age")]
+    public int Age { get; internal set; }
 
-        [JsonPropertyName("date")]
-        public DateTime Date { get; set; }
+    [JsonPropertyName("date")]
+    public DateTime Date { get; internal set; }
 
-        [JsonPropertyName("direction")]
-        public string Direction { get; set; }
-    }
+    [JsonPropertyName("direction")]
+    public string Directionality { get; internal set; }
+  }
 }

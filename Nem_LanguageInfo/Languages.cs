@@ -13,7 +13,8 @@ public class Languages {
     PropertyNamingPolicy = JsonNamingPolicy.CamelCase
   };
 
-  public static Languages Instance { get; private set; } = new();
+  private static readonly Lazy<Languages> _lazyInstance = new(() => new Languages());
+  public static Languages Instance { get => _lazyInstance.Value; }
 
   private readonly Dictionary<string, Language> _nameToLanguage = [];
   private readonly Dictionary<string, Language> _part1CodeToLanguage = [];
