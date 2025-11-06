@@ -3,24 +3,24 @@
 namespace Nem_LanguageInfo {
   public class Script {
     [JsonPropertyName("code")]
-    public string Code { get; set; }
+    public string Code { get; internal set; }
 
     [JsonPropertyName("number")]
-    public int Number { get; set; }
+    public int Number { get; internal set; }
 
     [JsonPropertyName("englishName")]
-    public string Name { get; set; }
+    public string Name { get; internal set; }
 
     [JsonPropertyName("alias")]
-    public string Alias { get; set; }
+    public string Alias { get; internal set; }
 
     [JsonPropertyName("age")]
-    public int Age { get; set; }
+    public int Age { get; internal set; }
 
     [JsonPropertyName("date")]
-    public DateTime Date { get; set; }
+    public DateTime Date { get; internal set; }
 
     [JsonPropertyName("direction")]
-    public string Directionality { get; set; }
+    public string Directionality { get; internal set; }
   }
 }
