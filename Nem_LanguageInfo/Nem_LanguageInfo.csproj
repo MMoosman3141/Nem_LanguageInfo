@@ -14,15 +14,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Data\iso-639-3.json" />
+    <EmbeddedResource Include="Data\ISO_3166.json" />
     <EmbeddedResource Include="Data\iso-15924.json" />
+    <EmbeddedResource Include="Data\un-m49.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Data\iso-639-3.json" />
-    <EmbeddedResource Include="Data\ISO_3166.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Data\un-m49.json" />
+    <PackageReference Include="Nem_HierarchyTree" Version="2.5.0" />
   </ItemGroup>
 
 </Project>
