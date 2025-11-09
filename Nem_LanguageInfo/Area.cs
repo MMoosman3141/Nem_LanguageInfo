@@ -1,15 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Nem_LanguageInfo; 
 
-namespace Nem_LanguageInfo {
-  public class Area {
-    public string M49Code { get; set; }
-    public string Name { get; set; }
-    public string Alpha2Code { get; set; }
-    public string Alpha3Code { get; set; }
-    public string DefaultLanguageCode { get; set; }
-  }
+/// <summary>
+/// Represents a geographical area with associated codes and default language.
+/// </summary>
+public class Area {
+  /// <summary>
+  /// Gets or sets the UN M49 code for the area.
+  /// </summary>
+  public string M49Code { get; set; }
+
+  /// <summary>
+  /// Gets or sets the name of the area.
+  /// </summary>
+  public string Name { get; set; }
+
+  /// <summary>
+  /// Gets or sets the ISO Alpha-2 code for the area.
+  /// </summary>
+  public string Alpha2Code { get; set; }
+
+  /// <summary>
+  /// Gets or sets the ISO Alpha-3 code for the area.
+  /// </summary>
+  public string Alpha3Code { get; set; }
+
+  /// <summary>
+  /// Gets or sets the default language code for the area.
+  /// </summary>
+  public string DefaultLanguageCode { get; set; }
 }

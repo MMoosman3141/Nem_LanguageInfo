@@ -1,289 +1,283 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Nem_LanguageInfo;
-using Xunit;
+﻿using Nem_LanguageInfo;
 
-namespace xUnit_Nem_LanguageInfo {
-  public class ScriptsTests {
-    [Fact]
-    public void Instance_ShouldReturnSingletonInstance() {
-      // Arrange & Act
-      Scripts instance1 = Scripts.Instance;
-      Scripts instance2 = Scripts.Instance;
+namespace xUnit_Nem_LanguageInfo;
 
-      // Assert
-      Assert.NotNull(instance1);
-      Assert.Same(instance1, instance2);
-    }
+public class ScriptsTests {
+  [Fact]
+  public void Instance_ShouldReturnSingletonInstance() {
+    // Arrange & Act
+    Scripts instance1 = Scripts.Instance;
+    Scripts instance2 = Scripts.Instance;
 
-    [Fact]
-    public void GetFromCode_WithValidCode_ShouldReturnCorrectScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(instance1);
+    Assert.Same(instance1, instance2);
+  }
 
-      // Act
-      Script latin = scripts.GetFromCode("Latn");
+  [Fact]
+  public void GetFromCode_WithValidCode_ShouldReturnCorrectScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(latin);
-      Assert.Equal("Latn", latin.Code);
-      Assert.Equal("Latin", latin.Name);
-      Assert.Equal(215, latin.Number);
-    }
+    // Act
+    Script latin = scripts.GetFromCode("Latn");
 
-    [Fact]
-    public void GetFromCode_WithInvalidCode_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(latin);
+    Assert.Equal("Latn", latin.Code);
+    Assert.Equal("Latin", latin.Name);
+    Assert.Equal(215, latin.Number);
+  }
 
-      // Act
-      Script result = scripts.GetFromCode("Zzzz");
+  [Fact]
+  public void GetFromCode_WithInvalidCode_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-      Assert.Equal(999, result.Number);
-    }
+    // Act
+    Script result = scripts.GetFromCode("Zzzz");
 
-    [Fact]
-    public void GetFromCode_WithNonExistentCode_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+    Assert.Equal(999, result.Number);
+  }
 
-      // Act
-      Script result = scripts.GetFromCode("Xxxx");
+  [Fact]
+  public void GetFromCode_WithNonExistentCode_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-      Assert.Equal(999, result.Number);
-    }
+    // Act
+    Script result = scripts.GetFromCode("Xxxx");
 
-    [Fact]
-    public void GetFromName_WithValidName_ShouldReturnCorrectScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+    Assert.Equal(999, result.Number);
+  }
 
-      // Act
-      Script latin = scripts.GetFromName("Latin");
+  [Fact]
+  public void GetFromName_WithValidName_ShouldReturnCorrectScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(latin);
-      Assert.Equal("Latin", latin.Name);
-      Assert.Equal("Latn", latin.Code);
-      Assert.Equal(215, latin.Number);
-    }
+    // Act
+    Script latin = scripts.GetFromName("Latin");
 
-    [Fact]
-    public void GetFromName_WithAlias_ShouldReturnCorrectScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(latin);
+    Assert.Equal("Latin", latin.Name);
+    Assert.Equal("Latn", latin.Code);
+    Assert.Equal(215, latin.Number);
+  }
 
-      // Act
-      Script arabic = scripts.GetFromName("Arabic");
+  [Fact]
+  public void GetFromName_WithAlias_ShouldReturnCorrectScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(arabic);
-      Assert.Equal("Arab", arabic.Code);
-      Assert.Equal(160, arabic.Number);
-    }
+    // Act
+    Script arabic = scripts.GetFromName("Arabic");
 
-    [Fact]
-    public void GetFromName_WithInvalidName_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(arabic);
+    Assert.Equal("Arab", arabic.Code);
+    Assert.Equal(160, arabic.Number);
+  }
 
-      // Act
-      Script result = scripts.GetFromName("InvalidScriptName");
+  [Fact]
+  public void GetFromName_WithInvalidName_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-      Assert.Equal(999, result.Number);
-    }
+    // Act
+    Script result = scripts.GetFromName("InvalidScriptName");
 
-    [Fact]
-    public void GetFromNumber_WithValidNumber_ShouldReturnCorrectScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+    Assert.Equal(999, result.Number);
+  }
 
-      // Act
-      Script latin = scripts.GetFromNumber(215);
+  [Fact]
+  public void GetFromNumber_WithValidNumber_ShouldReturnCorrectScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(latin);
-      Assert.Equal("Latn", latin.Code);
-      Assert.Equal("Latin", latin.Name);
-      Assert.Equal(215, latin.Number);
-    }
+    // Act
+    Script latin = scripts.GetFromNumber(215);
 
-    [Fact]
-    public void GetFromNumber_WithInvalidNumber_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(latin);
+    Assert.Equal("Latn", latin.Code);
+    Assert.Equal("Latin", latin.Name);
+    Assert.Equal(215, latin.Number);
+  }
 
-      // Act
-      Script result = scripts.GetFromNumber(9999);
+  [Fact]
+  public void GetFromNumber_WithInvalidNumber_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-      Assert.Equal(999, result.Number);
-    }
+    // Act
+    Script result = scripts.GetFromNumber(9999);
 
-    [Theory]
-    [InlineData("Latn", "Latin", 215)]
-    [InlineData("Arab", "Arabic", 160)]
-    [InlineData("Cyrl", "Cyrillic", 220)]
-    public void GetFromCode_WithMultipleValidCodes_ShouldReturnCorrectScripts(string code, string expectedName, int expectedNumber) {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+    Assert.Equal(999, result.Number);
+  }
 
-      // Act
-      Script result = scripts.GetFromCode(code);
+  [Theory]
+  [InlineData("Latn", "Latin", 215)]
+  [InlineData("Arab", "Arabic", 160)]
+  [InlineData("Cyrl", "Cyrillic", 220)]
+  public void GetFromCode_WithMultipleValidCodes_ShouldReturnCorrectScripts(string code, string expectedName, int expectedNumber) {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal(code, result.Code);
-      Assert.Equal(expectedName, result.Name);
-      Assert.Equal(expectedNumber, result.Number);
-    }
+    // Act
+    Script result = scripts.GetFromCode(code);
 
-    [Theory]
-    [InlineData("Latin", "Latn")]
-    [InlineData("Arabic", "Arab")]
-    [InlineData("Cyrillic", "Cyrl")]
-    public void GetFromName_WithMultipleValidNames_ShouldReturnCorrectScripts(string name, string expectedCode) {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal(code, result.Code);
+    Assert.Equal(expectedName, result.Name);
+    Assert.Equal(expectedNumber, result.Number);
+  }
 
-      // Act
-      Script result = scripts.GetFromName(name);
+  [Theory]
+  [InlineData("Latin", "Latn")]
+  [InlineData("Arabic", "Arab")]
+  [InlineData("Cyrillic", "Cyrl")]
+  public void GetFromName_WithMultipleValidNames_ShouldReturnCorrectScripts(string name, string expectedCode) {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal(name, result.Name);
-      Assert.Equal(expectedCode, result.Code);
-    }
+    // Act
+    Script result = scripts.GetFromName(name);
 
-    [Theory]
-    [InlineData(215, "Latn")]
-    [InlineData(160, "Arab")]
-    [InlineData(220, "Cyrl")]
-    public void GetFromNumber_WithMultipleValidNumbers_ShouldReturnCorrectScripts(int number, string expectedCode) {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal(name, result.Name);
+    Assert.Equal(expectedCode, result.Code);
+  }
 
-      // Act
-      Script result = scripts.GetFromNumber(number);
+  [Theory]
+  [InlineData(215, "Latn")]
+  [InlineData(160, "Arab")]
+  [InlineData(220, "Cyrl")]
+  public void GetFromNumber_WithMultipleValidNumbers_ShouldReturnCorrectScripts(int number, string expectedCode) {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal(number, result.Number);
-      Assert.Equal(expectedCode, result.Code);
-    }
+    // Act
+    Script result = scripts.GetFromNumber(number);
 
-    [Fact]
-    public void Script_Properties_ShouldBePopulated() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal(number, result.Number);
+    Assert.Equal(expectedCode, result.Code);
+  }
 
-      // Act
-      Script latin = scripts.GetFromCode("Latn");
+  [Fact]
+  public void Script_Properties_ShouldBePopulated() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(latin.Code);
-      Assert.NotNull(latin.Name);
-      Assert.NotNull(latin.Alias);
-      Assert.NotNull(latin.Directionality);
-      Assert.True(latin.Number > 0);
-      Assert.True(latin.Age >= 0);
-      Assert.NotEqual(default, latin.Date);
-    }
+    // Act
+    Script latin = scripts.GetFromCode("Latn");
 
-    [Fact]
-    public void GetFromCode_ShouldBeCaseSensitive() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(latin.Code);
+    Assert.NotNull(latin.Name);
+    Assert.NotNull(latin.Alias);
+    Assert.NotNull(latin.Directionality);
+    Assert.True(latin.Number > 0);
+    Assert.True(latin.Age >= 0);
+    Assert.NotEqual(default, latin.Date);
+  }
 
-      // Act
-      Script upperCase = scripts.GetFromCode("Latn");
-      Script lowerCase = scripts.GetFromCode("latn");
+  [Fact]
+  public void GetFromCode_ShouldBeCaseSensitive() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(upperCase);
-      Assert.Equal("Latn", upperCase.Code);
-      // lowercase should return unknown since codes are case-sensitive
-      Assert.Equal("Zzzz", lowerCase.Code);
-    }
+    // Act
+    Script upperCase = scripts.GetFromCode("Latn");
+    Script lowerCase = scripts.GetFromCode("latn");
 
-    [Fact]
-    public void GetFromName_WithEmptyString_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(upperCase);
+    Assert.Equal("Latn", upperCase.Code);
+    // lowercase should return unknown since codes are case-sensitive
+    Assert.Equal("Zzzz", lowerCase.Code);
+  }
 
-      // Act
-      Script result = scripts.GetFromName("");
+  [Fact]
+  public void GetFromName_WithEmptyString_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-    }
+    // Act
+    Script result = scripts.GetFromName("");
 
-    [Fact]
-    public void GetFromCode_WithEmptyString_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+  }
 
-      // Act
-      Script result = scripts.GetFromCode("");
+  [Fact]
+  public void GetFromCode_WithEmptyString_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-    }
+    // Act
+    Script result = scripts.GetFromCode("");
 
-    [Fact]
-    public void GetFromNumber_WithZero_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+  }
 
-      // Act
-      Script result = scripts.GetFromNumber(0);
+  [Fact]
+  public void GetFromNumber_WithZero_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-    }
+    // Act
+    Script result = scripts.GetFromNumber(0);
 
-    [Fact]
-    public void GetFromNumber_WithNegativeNumber_ShouldReturnUnknownScript() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+  }
 
-      // Act
-      Script result = scripts.GetFromNumber(-1);
+  [Fact]
+  public void GetFromNumber_WithNegativeNumber_ShouldReturnUnknownScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.NotNull(result);
-      Assert.Equal("Zzzz", result.Code);
-    }
+    // Act
+    Script result = scripts.GetFromNumber(-1);
 
-    [Fact]
-    public void Script_DirectionalityProperty_ShouldContainValidValues() {
-      // Arrange
-      Scripts scripts = Scripts.Instance;
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+  }
 
-      // Act
-      Script latin = scripts.GetFromCode("Latn");
-      Script arabic = scripts.GetFromCode("Arab");
+  [Fact]
+  public void Script_DirectionalityProperty_ShouldContainValidValues() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
 
-      // Assert
-      Assert.Equal("LTR", latin.Directionality); // Left-to-Right
-      Assert.Equal("RTL", arabic.Directionality); // Right-to-Left
-    }
+    // Act
+    Script latin = scripts.GetFromCode("Latn");
+    Script arabic = scripts.GetFromCode("Arab");
+
+    // Assert
+    Assert.Equal("LTR", latin.Directionality); // Left-to-Right
+    Assert.Equal("RTL", arabic.Directionality); // Right-to-Left
   }
 }
