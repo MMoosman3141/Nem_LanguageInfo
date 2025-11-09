@@ -50,7 +50,7 @@
   {"name": "Colombia", "alpha2": "CO", "alpha3": "COL", "primaryLanguage": "spa"},
   {"name": "Comoros", "alpha2": "KM", "alpha3": "COM", "primaryLanguage": "ara"},
   {"name": "Congo", "alpha2": "CG", "alpha3": "COG", "primaryLanguage": "fra"},
-  {"name": "Congo (the Democratic Republic of the)", "alpha2", "CD", "alpha3": "COD", "primaryLanguage": "fra"},
+  {"name": "Congo (the Democratic Republic of the)", "alpha2":  "CD", "alpha3": "COD", "primaryLanguage": "fra"},
   {"name": "Cook Islands", "alpha2": "CK", "alpha3": "COK", "primaryLanguage": "eng"},
   {"name": "Costa Rica", "alpha2": "CR", "alpha3": "CRI", "primaryLanguage": "spa"},
   {"name": "Côte d'Ivoire", "alpha2": "CI", "alpha3": "CIV", "primaryLanguage": "fra"},
