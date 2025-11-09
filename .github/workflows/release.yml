@@ -24,7 +24,7 @@ jobs:
 
       - name: Update .csproj version
         run: |
-          sed -i 's|<Version>.*</Version>|<Version>${{ env.VERSION }}</Version>|' Nem_LanguageInfo.csproj
+          sed -i 's|<Version>.*</Version>|<Version>${{ env.VERSION }}</Version>|' Nem_LanguageInfo/Nem_LanguageInfo.csproj
 
       - name: Restore dependencies
         run: dotnet restore
