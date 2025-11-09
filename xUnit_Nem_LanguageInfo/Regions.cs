@@ -93,12 +93,12 @@ public class RegionsTests {
   }
 
   [Fact]
-  public void GetAReaFromName_WithValidName_ShouldReturnCorrectArea() {
+  public void GetAreaFromName_WithValidName_ShouldReturnCorrectArea() {
     // Arrange
     Regions regions = Regions.Instance;
 
     // Act
-    Area usa = regions.GetAReaFromName("United States of America");
+    Area usa = regions.GetAreaFromName("United States of America");
 
     // Assert
     Assert.NotNull(usa);
@@ -108,24 +108,24 @@ public class RegionsTests {
   }
 
   [Fact]
-  public void GetAReaFromName_WithInvalidName_ShouldReturnNull() {
+  public void GetAreaFromName_WithInvalidName_ShouldReturnNull() {
     // Arrange
     Regions regions = Regions.Instance;
 
     // Act
-    Area result = regions.GetAReaFromName("Invalid Country Name");
+    Area result = regions.GetAreaFromName("Invalid Country Name");
 
     // Assert
     Assert.Null(result);
   }
 
   [Fact]
-  public void GetAReaFromName_WithEmptyString_ShouldReturnNull() {
+  public void GetAreaFromName_WithEmptyString_ShouldReturnNull() {
     // Arrange
     Regions regions = Regions.Instance;
 
     // Act
-    Area result = regions.GetAReaFromName("");
+    Area result = regions.GetAreaFromName("");
 
     // Assert
     Assert.Null(result);
@@ -234,8 +234,9 @@ public class RegionsTests {
     // Assert
     Assert.NotNull(upperCase);
     Assert.Equal("US", upperCase.Alpha2Code);
-    // lowercase should return null since codes are case-sensitive
-    Assert.Null(lowerCase);
+    
+    Assert.NotNull(lowerCase);
+    Assert.Equal("US", lowerCase.Alpha2Code);
   }
 
   [Fact]
@@ -250,8 +251,9 @@ public class RegionsTests {
     // Assert
     Assert.NotNull(upperCase);
     Assert.Equal("USA", upperCase.Alpha3Code);
-    // lowercase should return null since codes are case-sensitive
-    Assert.Null(lowerCase);
+    
+    Assert.NotNull(lowerCase);
+    Assert.Equal("USA", lowerCase.Alpha3Code);
   }
 
   [Fact]
@@ -275,7 +277,7 @@ public class RegionsTests {
     Regions regions = Regions.Instance;
 
     // Act
-    Area byName = regions.GetAReaFromName("United States of America");
+    Area byName = regions.GetAreaFromName("United States of America");
     Area byAlpha2 = regions.GetAreaFromIso3166Alpha2Code("US");
 
     // Assert

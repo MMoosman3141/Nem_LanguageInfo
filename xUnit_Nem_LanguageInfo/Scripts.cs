@@ -211,8 +211,9 @@ public class ScriptsTests {
     // Assert
     Assert.NotNull(upperCase);
     Assert.Equal("Latn", upperCase.Code);
-    // lowercase should return unknown since codes are case-sensitive
-    Assert.Equal("Zzzz", lowerCase.Code);
+    
+    Assert.NotNull(lowerCase);
+    Assert.Equal("Latn", lowerCase.Code);
   }
 
   [Fact]

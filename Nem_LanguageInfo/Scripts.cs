@@ -9,15 +9,10 @@ namespace Nem_LanguageInfo;
 /// </summary>
 public class Scripts {
   private const string ISO_15924_RESOURCE = "Nem_LanguageInfo.Data.iso-15924.json";
+  private readonly Script _scriptDefault;
   private readonly JsonSerializerOptions _serializerOptions = new() {
     Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
   };
-
-  private readonly Script _scriptDefault;
-
-  private readonly Dictionary<string, Script> _scriptsByCode = [];
-  private readonly Dictionary<string, Script> _scriptsByName = [];
-  private readonly Dictionary<int, Script> _scriptsByNumber = [];
 
   private static readonly Lazy<Scripts> _lazyInstance = new(() => new Scripts());
 
@@ -26,11 +21,18 @@ public class Scripts {
   /// </summary>
   public static Scripts Instance { get => _lazyInstance.Value; }
 
+  private readonly Dictionary<string, Script> _scriptsByCode = new(StringComparer.OrdinalIgnoreCase);
+  private readonly Dictionary<string, Script> _scriptsByName = new(StringComparer.OrdinalIgnoreCase);
+  private readonly Dictionary<int, Script> _scriptsByNumber = [];
+
   private Scripts() {
     Assembly assembly = Assembly.GetExecutingAssembly();
 
-    using Stream stream = assembly.GetManifestResourceStream(ISO_15924_RESOURCE);
-    List<Script> data = JsonSerializer.Deserialize<List<Script>>(stream, _serializerOptions);
+    using Stream stream = assembly.GetManifestResourceStream(ISO_15924_RESOURCE)
+    ?? throw new InvalidOperationException($"Resource '{ISO_15924_RESOURCE}' not found.");
+
+    List<Script> data = JsonSerializer.Deserialize<List<Script>>(stream, _serializerOptions)
+    ?? throw new InvalidOperationException("Failed to deserialize script data.");
 
     foreach (Script script in data) {
       _scriptsByCode[script.Code] = script;
@@ -41,7 +43,8 @@ public class Scripts {
       _scriptsByNumber[script.Number] = script;
     }
 
-    _scriptDefault = _scriptsByCode.GetValueOrDefault("Zzzz");
+    _scriptDefault = _scriptsByCode.GetValueOrDefault("Zzzz")
+    ?? throw new InvalidOperationException("Default script 'Zzzz' not found in script data.");
   }
 
   /// <summary>
@@ -51,6 +54,9 @@ public class Scripts {
   /// <param name="code">The ISO 15924 script code to look up.</param>
   /// <returns>The matching <see cref="Script"/> or the default script.</returns>
   public Script GetFromCode(string code) {
+    if (string.IsNullOrWhiteSpace(code)) {
+      return _scriptDefault;
+    }
     return _scriptsByCode.GetValueOrDefault(code) ?? _scriptDefault;
   }
 
@@ -61,6 +67,9 @@ public class Scripts {
   /// <param name="name">The ISO 15924 script name to look up.</param>
   /// <returns>The matching <see cref="Script"/> or the default script.</returns>
   public Script GetFromName(string name) {
+    if (string.IsNullOrWhiteSpace(name)) {
+      return _scriptDefault;
+    }
     return _scriptsByName.GetValueOrDefault(name) ?? _scriptDefault;
   }
 
