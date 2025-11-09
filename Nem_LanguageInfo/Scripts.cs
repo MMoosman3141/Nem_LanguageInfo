@@ -7,9 +7,7 @@ namespace Nem_LanguageInfo;
 public class Scripts {
   private const string ISO_15924_RESOURCE = "Nem_LanguageInfo.Data.iso-15924.json";
   private readonly JsonSerializerOptions _serializerOptions = new() {
-    WriteIndented = true,
     Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
   };
 
   private readonly Script _scriptDefault;
@@ -30,7 +28,9 @@ public class Scripts {
     foreach (Script script in data) {
       _scriptsByCode[script.Code] = script;
       _scriptsByName[script.Name] = script;
-      _scriptsByName.TryAdd(script.Alias, script);
+      if (!string.IsNullOrWhiteSpace(script.Alias)) {
+        _scriptsByName.TryAdd(script.Alias, script);
+      }
       _scriptsByNumber[script.Number] = script;
     }
 

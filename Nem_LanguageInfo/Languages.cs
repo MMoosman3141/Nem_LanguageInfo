@@ -8,9 +8,7 @@ public class Languages {
   private const string ISO_639_RESOURCE = "Nem_LanguageInfo.Data.iso-639-3.json";
   private readonly Language _langDefault;
   private readonly JsonSerializerOptions _serializerOptions = new() {
-    WriteIndented = true,
     Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
-    PropertyNamingPolicy = JsonNamingPolicy.CamelCase
   };
 
   private static readonly Lazy<Languages> _lazyInstance = new(() => new Languages());
@@ -31,7 +29,9 @@ public class Languages {
     foreach (Language iso639Model in iso639Data) {
       _nameToLanguage[iso639Model.Name] = iso639Model;
       foreach (string alias in iso639Model.Aliases) {
-        _nameToLanguage[alias] = iso639Model;
+        if (!string.IsNullOrWhiteSpace(alias)) {
+          _nameToLanguage[alias] = iso639Model;
+        }
       }
       _part1CodeToLanguage[iso639Model.Part1Code] = iso639Model;
       _part2BCodeToLanguage[iso639Model.Part2BCode] = iso639Model;

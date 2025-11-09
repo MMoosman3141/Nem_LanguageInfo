@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nem_LanguageInfo", "Nem_Lan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xUnit_Nem_LanguageInfo", "xUnit_Nem_LanguageInfo\xUnit_Nem_LanguageInfo.csproj", "{C55D7B88-5DFC-4BB4-8532-6BF50EAAA6A3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		CodeCoverageReport.ps1 = CodeCoverageReport.ps1
+		github\workflows\release.yml = github\workflows\release.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

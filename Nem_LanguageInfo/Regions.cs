@@ -2,6 +2,7 @@
 using System.Reflection;
 using System.Text.Encodings.Web;
 using System.Text.Json;
+using System.Xml.Linq;
 
 namespace Nem_LanguageInfo {
   public class Regions {
@@ -9,7 +10,6 @@ namespace Nem_LanguageInfo {
     private const string ISO_3166_RESOURCE = "Nem_LanguageInfo.Data.ISO_3166.json";
 
     private readonly JsonSerializerOptions _serializerOptions = new() {
-      WriteIndented = true,
       Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
       PropertyNamingPolicy = JsonNamingPolicy.CamelCase
     };
@@ -18,7 +18,7 @@ namespace Nem_LanguageInfo {
     private readonly Dictionary<string, Area> _countriesByAlpha3 = [];
     private readonly Dictionary<string, Area> _areaByName = [];
     private readonly Dictionary<string, Area> _areaByM49 = [];
-    HierarchyTree<Area> _areaTree = new();
+    private readonly HierarchyTree<Area> _areaTree = [];
 
     private static readonly Lazy<Regions> _lazyInstance = new(() => new Regions());
     public static Regions Instance { get => _lazyInstance.Value; }
@@ -41,7 +41,7 @@ namespace Nem_LanguageInfo {
         _areaByName[country.Name] = area;
       }
 
-      using Stream m49Stream = assembly.GetManifestResourceStream(ISO_3166_RESOURCE);
+      using Stream m49Stream = assembly.GetManifestResourceStream(UM_M49_RESOURCE);
       List<Region> regionData = JsonSerializer.Deserialize<List<Region>>(m49Stream, _serializerOptions);
 
       Node<Area> parent = null;
@@ -51,13 +51,7 @@ namespace Nem_LanguageInfo {
         AddArea(region.RegionCode, region.RegionName, added, ref parent);
         AddArea(region.SubregionCode, region.SubregionName, added, ref parent);
         AddArea(region.IntermediateRegionCode, region.IntermediateRegionName, added, ref parent);
-        //ToDo: Makes usre the added area is the same as we have in the counties dictionaries
-        AddArea(region.M49Code, region.CountryOrArea, added, ref parent);
-
-        Area country = _countriesByAlpha3.GetValueOrDefault(region.IsoAlpha3Code);
-        if (country is not null) {
-          country.M49Code = region.M49Code;
-        }
+        AddCountry(region.M49Code, region.CountryOrArea, region.IsoAlpha3Code, added, ref parent);
       }
     }
 
@@ -67,6 +61,7 @@ namespace Nem_LanguageInfo {
           M49Code = code,
           Name = name
         };
+
         if (_areaByM49.TryAdd(area.M49Code, area)) {
           added.TryGetValue(parent, out parent);
 
@@ -79,6 +74,43 @@ namespace Nem_LanguageInfo {
           }
         }
       }
+    }
+
+    private void AddCountry(string code, string name, string iso3166Code, HashSet<Node<Area>> added, ref Node<Area> parent) {
+      if (!string.IsNullOrWhiteSpace(code)) {
+        if (iso3166Code is null || !_countriesByAlpha3.TryGetValue(iso3166Code, out Area area)) {
+          area = new();
+        }
+        area.M49Code = code;
+
+        if (_areaByM49.TryAdd(area.M49Code, area)) {
+          added.TryGetValue(parent, out parent);
+
+          Node<Area> regionNode = new(area);
+          if (parent is not null) {
+            regionNode.ParentId = parent.Id;
+          }
+          if (_areaTree.TryAdd(regionNode, out parent)) {
+            added.Add(parent);
+          }
+        }
+      }
+    }
+
+    public Area GetAReaFromName(string reaName) {
+      return _areaByName.GetValueOrDefault(reaName);
+    }
+
+    public Area GetAreaFromIso3166Alpha2Code(string alpha2Code) {
+      return _countriesByAlpha2.GetValueOrDefault(alpha2Code);
+    }
+
+    public Area GetAreaFromIso3166Alpha3Code(string alpha3Code) {
+      return _countriesByAlpha3.GetValueOrDefault(alpha3Code);
+    }
+
+    public Area GetAreaFromUnM49Code(string m49Code) {
+      return _areaByM49.GetValueOrDefault(m49Code);
     }
   }
 }
