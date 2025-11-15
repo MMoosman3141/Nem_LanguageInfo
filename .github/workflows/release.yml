@@ -26,24 +26,18 @@ jobs:
         run: |
           sed -i 's|<Version>.*</Version>|<Version>${{ env.VERSION }}</Version>|' Nem_LanguageInfo/Nem_LanguageInfo.csproj
 
-      - name: Restore dependencies
-        run: dotnet restore
-
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
-
       - name: Run Unit Tests
         run: dotnet test --configuration Release --no-build --verbosity normal
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v2.0.6
         with:
           tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Pack NuGet package
-        run: dotnet pack --configuration Release --no-build --output ./nupkg
+        run: dotnet pack Nem_LanguageInfo/Nem_LanguageInfo.csproj --configuration Release --output ./nupkg
 
       - name: Publish to NuGet.org
         run: dotnet nuget push ./nupkg/*.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
