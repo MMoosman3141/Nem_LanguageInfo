@@ -49,6 +49,13 @@ public sealed class Script {
   public string Directionality { get; private set; }
 
   /// <summary>
+  /// Gets the word separation character used in the script.
+  /// Empty string for scripts that do not use a word separator.
+  /// </summary>
+  [JsonPropertyName("wordSeparation")]
+  public string WordSeparation { get; private set; }
+
+  /// <summary>
   /// Initializes a new instance of the <see cref="Script"/> class.
   /// </summary>
   /// <param name="code">The script code.</param>
@@ -58,9 +65,10 @@ public sealed class Script {
   /// <param name="age">The age of the script.</param>
   /// <param name="date">The date associated with the script.</param>
   /// <param name="directionality">The directionality of the script.</param>
+  /// <param name="wordSeparation">The word separator character for the script (empty string if none).</param>
   [JsonConstructor]
   public Script(string code, int number, string name,
-    string alias, int age, string date, string directionality) {
+    string alias, int age, string date, string directionality, string wordSeparation) {
     Code = code;
     Number = number;
     Name = name;
@@ -68,5 +76,6 @@ public sealed class Script {
     Age = age;
     Date = date;
     Directionality = directionality;
+    WordSeparation = wordSeparation;
   }
 }
