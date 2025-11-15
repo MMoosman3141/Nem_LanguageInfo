@@ -26,11 +26,17 @@ jobs:
         run: |
           sed -i 's|<Version>.*</Version>|<Version>${{ env.VERSION }}</Version>|' Nem_LanguageInfo/Nem_LanguageInfo.csproj
 
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+
       - name: Run Unit Tests
         run: dotnet test --configuration Release --no-build --verbosity normal
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2.0.6
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name }}
         env:
