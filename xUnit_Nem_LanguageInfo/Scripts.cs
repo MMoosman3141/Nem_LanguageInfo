@@ -27,6 +27,7 @@ public class ScriptsTests {
     Assert.Equal("Latn", latin.Code);
     Assert.Equal("Latin", latin.Name);
     Assert.Equal(215, latin.Number);
+    Assert.Equal(" ", latin.WordSeparation);
   }
 
   [Fact]
@@ -41,6 +42,7 @@ public class ScriptsTests {
     Assert.NotNull(result);
     Assert.Equal("Zzzz", result.Code);
     Assert.Equal(999, result.Number);
+    Assert.Equal("", result.WordSeparation);
   }
 
   [Fact]
@@ -55,6 +57,7 @@ public class ScriptsTests {
     Assert.NotNull(result);
     Assert.Equal("Zzzz", result.Code);
     Assert.Equal(999, result.Number);
+    Assert.Equal("", result.WordSeparation);
   }
 
   [Fact]
@@ -70,6 +73,7 @@ public class ScriptsTests {
     Assert.Equal("Latin", latin.Name);
     Assert.Equal("Latn", latin.Code);
     Assert.Equal(215, latin.Number);
+    Assert.Equal(" ", latin.WordSeparation);
   }
 
   [Fact]
@@ -84,6 +88,7 @@ public class ScriptsTests {
     Assert.NotNull(arabic);
     Assert.Equal("Arab", arabic.Code);
     Assert.Equal(160, arabic.Number);
+    Assert.Equal(" ", arabic.WordSeparation);
   }
 
   [Fact]
@@ -98,6 +103,23 @@ public class ScriptsTests {
     Assert.NotNull(result);
     Assert.Equal("Zzzz", result.Code);
     Assert.Equal(999, result.Number);
+    Assert.Equal("", result.WordSeparation);
+  }
+
+  [Fact]
+  public void GetFromCode_WithSpecificSeparator_ShouldReturnCorrectScript() {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
+
+    // Act
+    Script ethiopic = scripts.GetFromCode("Ethi");
+
+    // Assert
+    Assert.NotNull(ethiopic);
+    Assert.Equal("Ethi", ethiopic.Code);
+    Assert.Equal("Ethiopic (Geʻez)", ethiopic.Name);
+    Assert.Equal(430, ethiopic.Number);
+    Assert.Equal("፡", ethiopic.WordSeparation);
   }
 
   [Fact]
@@ -113,6 +135,7 @@ public class ScriptsTests {
     Assert.Equal("Latn", latin.Code);
     Assert.Equal("Latin", latin.Name);
     Assert.Equal(215, latin.Number);
+    Assert.Equal(" ", latin.WordSeparation);
   }
 
   [Fact]
@@ -127,6 +150,7 @@ public class ScriptsTests {
     Assert.NotNull(result);
     Assert.Equal("Zzzz", result.Code);
     Assert.Equal(999, result.Number);
+    Assert.Equal("", result.WordSeparation);
   }
 
   [Theory]

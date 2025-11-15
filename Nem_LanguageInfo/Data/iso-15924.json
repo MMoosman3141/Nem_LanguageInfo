@@ -6,7 +6,8 @@
     "alias": "Adlam",
     "age": 9,
     "date": "2016-12-05T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Afak",
@@ -15,7 +16,8 @@
     "alias": "",
     "age": 0,
     "date": "2010-12-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Aghb",
@@ -24,7 +26,8 @@
     "alias": "Caucasian_Albanian",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Ahom",
@@ -33,7 +36,8 @@
     "alias": "Ahom",
     "age": 8,
     "date": "2015-07-07T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Arab",
@@ -42,7 +46,8 @@
     "alias": "Arabic",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Aran",
@@ -51,7 +56,8 @@
     "alias": "",
     "age": 1,
     "date": "2014-11-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Armi",
@@ -60,7 +66,8 @@
     "alias": "Imperial_Aramaic",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Armn",
@@ -69,7 +76,8 @@
     "alias": "Armenian",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Avst",
@@ -78,7 +86,8 @@
     "alias": "Avestan",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": "."
   },
   {
     "code": "Bali",
@@ -87,7 +96,8 @@
     "alias": "Balinese",
     "age": 5,
     "date": "2006-10-10T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Bamu",
@@ -96,7 +106,8 @@
     "alias": "Bamum",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Bass",
@@ -105,7 +116,8 @@
     "alias": "Bassa_Vah",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Batk",
@@ -114,7 +126,8 @@
     "alias": "Batak",
     "age": 6,
     "date": "2010-07-23T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Beng",
@@ -123,7 +136,8 @@
     "alias": "Bengali",
     "age": 1,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Berf",
@@ -132,7 +146,8 @@
     "alias": "",
     "age": 0,
     "date": "2025-01-06T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Bhks",
@@ -141,7 +156,8 @@
     "alias": "Bhaiksuki",
     "age": 9,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Blis",
@@ -150,7 +166,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Bopo",
@@ -159,7 +176,8 @@
     "alias": "Bopomofo",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Brah",
@@ -168,7 +186,8 @@
     "alias": "Brahmi",
     "age": 6,
     "date": "2010-07-23T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Brai",
@@ -177,7 +196,8 @@
     "alias": "Braille",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Bugi",
@@ -186,7 +206,8 @@
     "alias": "Buginese",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Buhd",
@@ -195,7 +216,8 @@
     "alias": "Buhid",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Cakm",
@@ -204,7 +226,8 @@
     "alias": "Chakma",
     "age": 6,
     "date": "2012-02-06T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Cans",
@@ -213,7 +236,8 @@
     "alias": "Canadian_Aboriginal",
     "age": 3,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Cari",
@@ -222,7 +246,8 @@
     "alias": "Carian",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Cham",
@@ -231,7 +256,8 @@
     "alias": "Cham",
     "age": 5,
     "date": "2009-11-11T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Cher",
@@ -240,7 +266,8 @@
     "alias": "Cherokee",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Chis",
@@ -249,7 +276,8 @@
     "alias": "",
     "age": 0,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Chrs",
@@ -258,7 +286,8 @@
     "alias": "Chorasmian",
     "age": 13,
     "date": "2019-08-19T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Cirt",
@@ -267,7 +296,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Copt",
@@ -276,7 +306,8 @@
     "alias": "Coptic",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Cpmn",
@@ -285,7 +316,8 @@
     "alias": "Cypro_Minoan",
     "age": 14,
     "date": "2017-07-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Cprt",
@@ -294,7 +326,8 @@
     "alias": "Cypriot",
     "age": 4,
     "date": "2017-07-26T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Cyrl",
@@ -303,7 +336,8 @@
     "alias": "Cyrillic",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Cyrs",
@@ -312,7 +346,8 @@
     "alias": "",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Deva",
@@ -321,7 +356,8 @@
     "alias": "Devanagari",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Diak",
@@ -330,7 +366,8 @@
     "alias": "Dives_Akuru",
     "age": 13,
     "date": "2019-08-19T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Dogr",
@@ -339,7 +376,8 @@
     "alias": "Dogra",
     "age": 11,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Dsrt",
@@ -348,7 +386,8 @@
     "alias": "Deseret",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Dupl",
@@ -357,7 +396,8 @@
     "alias": "Duployan",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Egyd",
@@ -366,7 +406,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Egyh",
@@ -375,7 +416,8 @@
     "alias": "",
     "age": 5,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Egyp",
@@ -384,7 +426,8 @@
     "alias": "Egyptian_Hieroglyphs",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Elba",
@@ -393,7 +436,8 @@
     "alias": "Elbasan",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Elym",
@@ -402,7 +446,8 @@
     "alias": "Elymaic",
     "age": 12,
     "date": "2018-08-26T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Ethi",
@@ -411,7 +456,8 @@
     "alias": "Ethiopic",
     "age": 3,
     "date": "2004-10-25T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": "፡"
   },
   {
     "code": "Gara",
@@ -420,7 +466,8 @@
     "alias": "Garay",
     "age": 16,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Geok",
@@ -429,7 +476,8 @@
     "alias": "Georgian",
     "age": 1,
     "date": "2012-10-16T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Geor",
@@ -438,7 +486,8 @@
     "alias": "Georgian",
     "age": 1,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Glag",
@@ -447,7 +496,8 @@
     "alias": "Glagolitic",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Gong",
@@ -456,7 +506,8 @@
     "alias": "Gunjala_Gondi",
     "age": 11,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Gonm",
@@ -465,7 +516,8 @@
     "alias": "Masaram_Gondi",
     "age": 10,
     "date": "2017-07-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Goth",
@@ -474,7 +526,8 @@
     "alias": "Gothic",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Gran",
@@ -483,7 +536,8 @@
     "alias": "Grantha",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Grek",
@@ -492,7 +546,8 @@
     "alias": "Greek",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Gujr",
@@ -501,7 +556,8 @@
     "alias": "Gujarati",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Gukh",
@@ -510,7 +566,8 @@
     "alias": "Gurung_Khema",
     "age": 16,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Guru",
@@ -519,7 +576,8 @@
     "alias": "Gurmukhi",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Hanb",
@@ -528,7 +586,8 @@
     "alias": "",
     "age": 1,
     "date": "2016-01-19T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Hang",
@@ -537,7 +596,8 @@
     "alias": "Hangul",
     "age": 1,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Hani",
@@ -546,7 +606,8 @@
     "alias": "Han",
     "age": 1,
     "date": "2009-02-23T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Hano",
@@ -555,7 +616,8 @@
     "alias": "Hanunoo",
     "age": 3,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Hans",
@@ -564,7 +626,8 @@
     "alias": "",
     "age": 1,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Hant",
@@ -573,7 +636,8 @@
     "alias": "",
     "age": 1,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Hatr",
@@ -582,7 +646,8 @@
     "alias": "Hatran",
     "age": 8,
     "date": "2015-07-07T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Hebr",
@@ -591,7 +656,8 @@
     "alias": "Hebrew",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Hira",
@@ -600,7 +666,8 @@
     "alias": "Hiragana",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Hluw",
@@ -609,7 +676,8 @@
     "alias": "Anatolian_Hieroglyphs",
     "age": 8,
     "date": "2015-07-07T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Hmng",
@@ -618,7 +686,8 @@
     "alias": "Pahawh_Hmong",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Hmnp",
@@ -627,7 +696,8 @@
     "alias": "Nyiakeng_Puachue_Hmong",
     "age": 12,
     "date": "2017-07-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Hntl",
@@ -636,7 +706,8 @@
     "alias": "",
     "age": 0,
     "date": "2025-04-24T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Hrkt",
@@ -645,7 +716,8 @@
     "alias": "Katakana_Or_Hiragana",
     "age": 1,
     "date": "2011-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Hung",
@@ -654,7 +726,8 @@
     "alias": "Old_Hungarian",
     "age": 8,
     "date": "2015-07-07T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Inds",
@@ -663,7 +736,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Ital",
@@ -672,7 +746,8 @@
     "alias": "Old_Italic",
     "age": 3,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Jamo",
@@ -681,7 +756,8 @@
     "alias": "",
     "age": 1,
     "date": "2016-01-19T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Java",
@@ -690,7 +766,8 @@
     "alias": "Javanese",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Jpan",
@@ -699,7 +776,8 @@
     "alias": "",
     "age": 1,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Jurc",
@@ -708,7 +786,8 @@
     "alias": "",
     "age": 0,
     "date": "2010-12-21T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Kali",
@@ -717,7 +796,8 @@
     "alias": "Kayah_Li",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Kana",
@@ -726,7 +806,8 @@
     "alias": "Katakana",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Kawi",
@@ -735,7 +816,8 @@
     "alias": "Kawi",
     "age": 15,
     "date": "2021-12-03T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Khar",
@@ -744,7 +826,8 @@
     "alias": "Kharoshthi",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Khmr",
@@ -753,7 +836,8 @@
     "alias": "Khmer",
     "age": 3,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Khoj",
@@ -762,7 +846,8 @@
     "alias": "Khojki",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Kitl",
@@ -771,7 +856,8 @@
     "alias": "",
     "age": 0,
     "date": "2015-07-15T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Kits",
@@ -780,7 +866,8 @@
     "alias": "Khitan_Small_Script",
     "age": 13,
     "date": "2015-07-15T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Knda",
@@ -789,7 +876,8 @@
     "alias": "Kannada",
     "age": 1,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Kore",
@@ -798,7 +886,8 @@
     "alias": "",
     "age": 1,
     "date": "2007-06-13T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Kpel",
@@ -807,7 +896,8 @@
     "alias": "",
     "age": 0,
     "date": "2010-03-26T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Krai",
@@ -816,7 +906,8 @@
     "alias": "Kirat_Rai",
     "age": 16,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Kthi",
@@ -825,7 +916,8 @@
     "alias": "Kaithi",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Lana",
@@ -834,7 +926,8 @@
     "alias": "Tai_Tham",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Laoo",
@@ -843,7 +936,8 @@
     "alias": "Lao",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Latf",
@@ -852,7 +946,8 @@
     "alias": "",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Latg",
@@ -861,7 +956,8 @@
     "alias": "",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Latn",
@@ -870,7 +966,8 @@
     "alias": "Latin",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Leke",
@@ -879,7 +976,8 @@
     "alias": "",
     "age": 0,
     "date": "2015-07-07T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Lepc",
@@ -888,7 +986,8 @@
     "alias": "Lepcha",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Limb",
@@ -897,7 +996,8 @@
     "alias": "Limbu",
     "age": 4,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Lina",
@@ -906,7 +1006,8 @@
     "alias": "Linear_A",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Linb",
@@ -915,7 +1016,8 @@
     "alias": "Linear_B",
     "age": 4,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Lisu",
@@ -924,7 +1026,8 @@
     "alias": "Lisu",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Loma",
@@ -933,7 +1036,8 @@
     "alias": "",
     "age": 0,
     "date": "2010-03-26T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Lyci",
@@ -942,7 +1046,8 @@
     "alias": "Lycian",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Lydi",
@@ -951,7 +1056,8 @@
     "alias": "Lydian",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Mahj",
@@ -960,7 +1066,8 @@
     "alias": "Mahajani",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Maka",
@@ -969,7 +1076,8 @@
     "alias": "Makasar",
     "age": 11,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Mand",
@@ -978,7 +1086,8 @@
     "alias": "Mandaic",
     "age": 6,
     "date": "2010-07-23T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Mani",
@@ -987,7 +1096,8 @@
     "alias": "Manichaean",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Marc",
@@ -996,7 +1106,8 @@
     "alias": "Marchen",
     "age": 9,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Maya",
@@ -1005,7 +1116,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Medf",
@@ -1014,7 +1126,8 @@
     "alias": "Medefaidrin",
     "age": 11,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Mend",
@@ -1023,7 +1136,8 @@
     "alias": "Mende_Kikakui",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Merc",
@@ -1032,7 +1146,8 @@
     "alias": "Meroitic_Cursive",
     "age": 6,
     "date": "2012-02-06T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Mero",
@@ -1041,7 +1156,8 @@
     "alias": "Meroitic_Hieroglyphs",
     "age": 6,
     "date": "2012-02-06T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Mlym",
@@ -1050,7 +1166,8 @@
     "alias": "Malayalam",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Modi",
@@ -1059,7 +1176,8 @@
     "alias": "Modi",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Mong",
@@ -1068,7 +1186,8 @@
     "alias": "Mongolian",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": " "
   },
   {
     "code": "Moon",
@@ -1077,7 +1196,8 @@
     "alias": "",
     "age": 0,
     "date": "2006-12-11T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Mroo",
@@ -1086,7 +1206,8 @@
     "alias": "Mro",
     "age": 7,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Mtei",
@@ -1095,7 +1216,8 @@
     "alias": "Meetei_Mayek",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Mult",
@@ -1104,7 +1226,8 @@
     "alias": "Multani",
     "age": 8,
     "date": "2015-07-07T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Mymr",
@@ -1113,7 +1236,8 @@
     "alias": "Myanmar",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Nagm",
@@ -1122,7 +1246,8 @@
     "alias": "Nag_Mundari",
     "age": 15,
     "date": "2021-12-03T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Nand",
@@ -1131,7 +1256,8 @@
     "alias": "Nandinagari",
     "age": 12,
     "date": "2018-08-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Narb",
@@ -1140,7 +1266,8 @@
     "alias": "Old_North_Arabian",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Nbat",
@@ -1149,7 +1276,8 @@
     "alias": "Nabataean",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Newa",
@@ -1158,7 +1286,8 @@
     "alias": "Newa",
     "age": 9,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Nkdb",
@@ -1167,7 +1296,8 @@
     "alias": "",
     "age": 0,
     "date": "2017-07-26T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Nkgb",
@@ -1176,7 +1306,8 @@
     "alias": "",
     "age": 0,
     "date": "2017-07-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Nkoo",
@@ -1185,7 +1316,8 @@
     "alias": "Nko",
     "age": 5,
     "date": "2006-10-10T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Nshu",
@@ -1194,7 +1326,8 @@
     "alias": "Nushu",
     "age": 10,
     "date": "2017-07-26T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Ogam",
@@ -1203,7 +1336,8 @@
     "alias": "Ogham",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Olck",
@@ -1212,7 +1346,8 @@
     "alias": "Ol_Chiki",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Onao",
@@ -1221,7 +1356,8 @@
     "alias": "Ol_Onal",
     "age": 16,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Orkh",
@@ -1230,7 +1366,8 @@
     "alias": "Old_Turkic",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ":"
   },
   {
     "code": "Orya",
@@ -1239,7 +1376,8 @@
     "alias": "Oriya",
     "age": 1,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Osge",
@@ -1248,7 +1386,8 @@
     "alias": "Osage",
     "age": 9,
     "date": "2016-12-05T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Osma",
@@ -1257,7 +1396,8 @@
     "alias": "Osmanya",
     "age": 4,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Ougr",
@@ -1266,7 +1406,8 @@
     "alias": "Old_Uyghur",
     "age": 14,
     "date": "2021-01-25T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": " "
   },
   {
     "code": "Palm",
@@ -1275,7 +1416,8 @@
     "alias": "Palmyrene",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Pauc",
@@ -1284,7 +1426,8 @@
     "alias": "Pau_Cin_Hau",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Pcun",
@@ -1293,7 +1436,8 @@
     "alias": "",
     "age": 0,
     "date": "2021-01-25T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Pelm",
@@ -1302,7 +1446,8 @@
     "alias": "",
     "age": 0,
     "date": "2021-01-25T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Perm",
@@ -1311,7 +1456,8 @@
     "alias": "Old_Permic",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Phag",
@@ -1320,7 +1466,8 @@
     "alias": "Phags_Pa",
     "age": 5,
     "date": "2006-10-10T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": " "
   },
   {
     "code": "Phli",
@@ -1329,7 +1476,8 @@
     "alias": "Inscriptional_Pahlavi",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Phlp",
@@ -1338,7 +1486,8 @@
     "alias": "Psalter_Pahlavi",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Phlv",
@@ -1347,7 +1496,8 @@
     "alias": "",
     "age": 0,
     "date": "2007-07-15T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Phnx",
@@ -1356,7 +1506,8 @@
     "alias": "Phoenician",
     "age": 5,
     "date": "2006-10-10T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Plrd",
@@ -1365,7 +1516,8 @@
     "alias": "Miao",
     "age": 6,
     "date": "2012-02-06T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Piqd",
@@ -1374,7 +1526,8 @@
     "alias": "",
     "age": 0,
     "date": "2015-12-16T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Prti",
@@ -1383,7 +1536,8 @@
     "alias": "Inscriptional_Parthian",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Psin",
@@ -1392,7 +1546,8 @@
     "alias": "",
     "age": 0,
     "date": "2021-01-25T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Qaaa",
@@ -1401,7 +1556,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Qabx",
@@ -1410,7 +1566,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Ranj",
@@ -1419,7 +1576,8 @@
     "alias": "",
     "age": 0,
     "date": "2021-01-25T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Rjng",
@@ -1428,7 +1586,8 @@
     "alias": "Rejang",
     "age": 5,
     "date": "2009-02-23T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Rohg",
@@ -1437,7 +1596,8 @@
     "alias": "Hanifi_Rohingya",
     "age": 11,
     "date": "2017-11-21T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Roro",
@@ -1446,7 +1606,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Runr",
@@ -1455,7 +1616,8 @@
     "alias": "Runic",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ":"
   },
   {
     "code": "Samr",
@@ -1464,7 +1626,8 @@
     "alias": "Samaritan",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Sara",
@@ -1473,7 +1636,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Sarb",
@@ -1482,7 +1646,8 @@
     "alias": "Old_South_Arabian",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": "|"
   },
   {
     "code": "Saur",
@@ -1491,7 +1656,8 @@
     "alias": "Saurashtra",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Seal",
@@ -1500,7 +1666,8 @@
     "alias": "",
     "age": 0,
     "date": "2025-04-24T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Sgnw",
@@ -1509,7 +1676,8 @@
     "alias": "SignWriting",
     "age": 8,
     "date": "2015-07-07T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": " "
   },
   {
     "code": "Shaw",
@@ -1518,7 +1686,8 @@
     "alias": "Shavian",
     "age": 4,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": "·"
   },
   {
     "code": "Shrd",
@@ -1527,7 +1696,8 @@
     "alias": "Sharada",
     "age": 6,
     "date": "2012-02-06T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Shui",
@@ -1536,7 +1706,8 @@
     "alias": "",
     "age": 0,
     "date": "2017-07-26T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Sidd",
@@ -1545,7 +1716,8 @@
     "alias": "Siddham",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Sidt",
@@ -1554,7 +1726,8 @@
     "alias": "",
     "age": 0,
     "date": "2023-09-12T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": ""
   },
   {
     "code": "Sind",
@@ -1563,7 +1736,8 @@
     "alias": "Khudawadi",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Sinh",
@@ -1572,7 +1746,8 @@
     "alias": "Sinhala",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Sogd",
@@ -1581,7 +1756,8 @@
     "alias": "Sogdian",
     "age": 11,
     "date": "2017-11-21T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Sogo",
@@ -1590,7 +1766,8 @@
     "alias": "Old_Sogdian",
     "age": 11,
     "date": "2017-11-21T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Sora",
@@ -1599,7 +1776,8 @@
     "alias": "Sora_Sompeng",
     "age": 6,
     "date": "2012-02-06T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Soyo",
@@ -1608,7 +1786,8 @@
     "alias": "Soyombo",
     "age": 10,
     "date": "2017-07-26T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Sund",
@@ -1617,7 +1796,8 @@
     "alias": "Sundanese",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Sunu",
@@ -1626,7 +1806,8 @@
     "alias": "Sunuwar",
     "age": 16,
     "date": "2021-12-03T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Sylo",
@@ -1635,7 +1816,8 @@
     "alias": "Syloti_Nagri",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Syrc",
@@ -1644,7 +1826,8 @@
     "alias": "Syriac",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Syre",
@@ -1653,7 +1836,8 @@
     "alias": "",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Syrj",
@@ -1662,7 +1846,8 @@
     "alias": "",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Syrn",
@@ -1671,7 +1856,8 @@
     "alias": "",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Tagb",
@@ -1680,7 +1866,8 @@
     "alias": "Tagbanwa",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Takr",
@@ -1689,7 +1876,8 @@
     "alias": "Takri",
     "age": 6,
     "date": "2012-02-06T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Tale",
@@ -1698,7 +1886,8 @@
     "alias": "Tai_Le",
     "age": 4,
     "date": "2004-10-25T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Talu",
@@ -1707,7 +1896,8 @@
     "alias": "New_Tai_Lue",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Taml",
@@ -1716,7 +1906,8 @@
     "alias": "Tamil",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Tang",
@@ -1725,7 +1916,8 @@
     "alias": "Tangut",
     "age": 9,
     "date": "2016-12-05T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Tavt",
@@ -1734,7 +1926,8 @@
     "alias": "Tai_Viet",
     "age": 5,
     "date": "2009-06-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Tayo",
@@ -1743,7 +1936,8 @@
     "alias": "",
     "age": 0,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Telu",
@@ -1752,7 +1946,8 @@
     "alias": "Telugu",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Teng",
@@ -1761,7 +1956,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Tfng",
@@ -1770,7 +1966,8 @@
     "alias": "Tifinagh",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Tglg",
@@ -1779,7 +1976,8 @@
     "alias": "Tagalog",
     "age": 3,
     "date": "2009-02-23T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Thaa",
@@ -1788,7 +1986,8 @@
     "alias": "Thaana",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Thai",
@@ -1797,7 +1996,8 @@
     "alias": "Thai",
     "age": 1,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Tibt",
@@ -1806,7 +2006,8 @@
     "alias": "Tibetan",
     "age": 2,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Tirh",
@@ -1815,7 +2016,8 @@
     "alias": "Tirhuta",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Tnsa",
@@ -1824,7 +2026,8 @@
     "alias": "Tangsa",
     "age": 14,
     "date": "2021-02-17T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Todr",
@@ -1833,7 +2036,8 @@
     "alias": "Todhri",
     "age": 16,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Tols",
@@ -1842,7 +2046,8 @@
     "alias": "",
     "age": 0,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Toto",
@@ -1851,7 +2056,8 @@
     "alias": "Toto",
     "age": 14,
     "date": "2020-04-16T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Tutg",
@@ -1860,7 +2066,8 @@
     "alias": "Tulu_Tigalari",
     "age": 16,
     "date": "2023-09-12T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Ugar",
@@ -1869,7 +2076,8 @@
     "alias": "Ugaritic",
     "age": 4,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Vaii",
@@ -1878,7 +2086,8 @@
     "alias": "Vai",
     "age": 5,
     "date": "2007-07-02T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Visp",
@@ -1887,7 +2096,8 @@
     "alias": "",
     "age": 0,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Vith",
@@ -1896,7 +2106,8 @@
     "alias": "Vithkuqi",
     "age": 14,
     "date": "2021-02-17T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Wara",
@@ -1905,7 +2116,8 @@
     "alias": "Warang_Citi",
     "age": 7,
     "date": "2014-11-15T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Wcho",
@@ -1914,7 +2126,8 @@
     "alias": "Wancho",
     "age": 12,
     "date": "2017-07-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Wole",
@@ -1923,7 +2136,8 @@
     "alias": "",
     "age": 0,
     "date": "2010-12-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Xpeo",
@@ -1932,7 +2146,8 @@
     "alias": "Old_Persian",
     "age": 4,
     "date": "2006-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Xsux",
@@ -1941,7 +2156,8 @@
     "alias": "Cuneiform",
     "age": 5,
     "date": "2006-10-10T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Yezi",
@@ -1950,7 +2166,8 @@
     "alias": "Yezidi",
     "age": 13,
     "date": "2019-08-19T00:00:00",
-    "direction": "RTL"
+    "direction": "RTL",
+    "wordSeparation": " "
   },
   {
     "code": "Yiii",
@@ -1959,7 +2176,8 @@
     "alias": "Yi",
     "age": 3,
     "date": "2004-05-01T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Zanb",
@@ -1968,7 +2186,8 @@
     "alias": "Zanabazar_Square",
     "age": 10,
     "date": "2017-07-26T00:00:00",
-    "direction": "TTB"
+    "direction": "TTB",
+    "wordSeparation": ""
   },
   {
     "code": "Zinh",
@@ -1977,7 +2196,8 @@
     "alias": "Inherited",
     "age": 0,
     "date": "2009-02-23T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Zmth",
@@ -1986,7 +2206,8 @@
     "alias": "",
     "age": 3,
     "date": "2007-11-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Zsye",
@@ -1995,7 +2216,8 @@
     "alias": "",
     "age": 6,
     "date": "2015-12-16T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Zsym",
@@ -2004,7 +2226,8 @@
     "alias": "",
     "age": 1,
     "date": "2007-11-26T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": " "
   },
   {
     "code": "Zxxx",
@@ -2013,7 +2236,8 @@
     "alias": "",
     "age": 0,
     "date": "2011-06-21T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Zyyy",
@@ -2022,7 +2246,8 @@
     "alias": "Common",
     "age": 0,
     "date": "2004-05-29T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   },
   {
     "code": "Zzzz",
@@ -2031,6 +2256,7 @@
     "alias": "Unknown",
     "age": 0,
     "date": "2006-10-10T00:00:00",
-    "direction": "LTR"
+    "direction": "LTR",
+    "wordSeparation": ""
   }
 ]
