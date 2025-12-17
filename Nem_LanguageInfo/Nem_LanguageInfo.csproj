@@ -8,13 +8,13 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Nem_LanguageInfo</Title>
     <Authors>Mark Moosman</Authors>
-    <Description>A library for finding ISO 639, ISO 3166, ISO 15924, and UN M.49 information</Description>
+    <Description>A library for finding ISO 639, ISO 3166, ISO 15924, UN M.49, and IEFT BCP 47 information</Description>
     <Copyright>Copyright (c) 2025, Mark Moosman</Copyright>
     <PackageProjectUrl>https://github.com/MMoosman3141/Nem_LanguageInfo</PackageProjectUrl>
     <PackageIcon>NemAnkh_128x128.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/MMoosman3141/Nem_LanguageInfo</RepositoryUrl>
-    <PackageTags>ISO-639;ISO-15924;ISO-3166;UN M.49 </PackageTags>
+    <PackageTags>ISO-639;ISO-15924;ISO-3166;UN-M.49;BCP-47</PackageTags>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
