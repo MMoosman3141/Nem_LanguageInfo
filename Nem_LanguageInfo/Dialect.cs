@@ -49,7 +49,7 @@ public class Dialect {
   public Dialect(Language language, Area region = null, Script script = null, string variant = null) {
     Language = language;
     Region = region;
-    Script = script;
+    Script = script ?? language.Script;
     Variant = variant;
   }
 
@@ -63,7 +63,7 @@ public class Dialect {
   public Dialect(string languageCode, string regionCode = null, string scriptCode = null, string variant = null) {
     Language = Languages.Instance.GetLanguage(languageCode) ?? throw new ArgumentException($"Invalid language code: {languageCode}");
     Region = !string.IsNullOrWhiteSpace(regionCode) ? Regions.Instance.GetArea(regionCode) ?? throw new ArgumentException($"Invalid region code: {regionCode}") : null;
-    Script = !string.IsNullOrWhiteSpace(scriptCode) ? Scripts.Instance.GetFromCode(scriptCode) ?? throw new ArgumentException($"Invalid script code: {scriptCode}") : null;
+    Script = !string.IsNullOrWhiteSpace(scriptCode) ? Scripts.Instance.GetFromCode(scriptCode) ?? Language.Script : Language.Script;
     Variant = variant;
   }
 
@@ -82,7 +82,7 @@ public class Dialect {
     string regionCode = match.Groups["region"].Success ? match.Groups["region"].Value : null;
     string variant = match.Groups["variant"].Success ? match.Groups["variant"].Value : null;
     Language = Languages.Instance.GetLanguage(languageCode) ?? throw new ArgumentException($"Invalid language code: {languageCode}");
-    Script = scriptCode is not null ? Scripts.Instance.GetFromCode(scriptCode) ?? throw new ArgumentException($"Invalid script code: {scriptCode}") : null;
+    Script = scriptCode is not null ? Scripts.Instance.GetFromCode(scriptCode) ?? Language.Script : Language.Script;
     Region = regionCode is not null ? Regions.Instance.GetArea(regionCode) ?? throw new ArgumentException($"Invalid region code: {regionCode}") : null;
     Variant = variant;
   }
@@ -91,7 +91,15 @@ public class Dialect {
   /// Returns the BCP 47 string representation of the dialect, including language, script, region, and variant if present.
   /// </summary>
   public override string ToString() {
-    StringBuilder sb = new(Language?.Part1Code ?? Language?.Part3Code ?? Languages.Instance.GetFromPart3Code("und").Part3Code);
+    StringBuilder sb = new();
+    if (!string.IsNullOrWhiteSpace(Language?.Part1Code)) {
+      sb.Append(Language.Part1Code);
+    } else if (!string.IsNullOrWhiteSpace(Language?.Part3Code)) {
+      sb.Append(Language.Part3Code);
+    } else {
+      sb.Append("und");
+    }
+
     if (Script is not null) {
       sb.Append('-').Append(Script.Code);
     }
