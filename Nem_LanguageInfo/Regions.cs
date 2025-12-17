@@ -186,6 +186,12 @@ public class Regions {
     return _areaByM49.GetValueOrDefault(m49Code);
   }
 
+  /// <summary>
+  /// Gets the <see cref="Area"/> information for a region or country using a value that may be an ISO 3166-1 alpha-2 code,
+  /// ISO 3166-1 alpha-3 code, UN M49 code, or the name of the region or country.
+  /// </summary>
+  /// <param name="value">The code or name representing the region or country.</param>
+  /// <returns>The <see cref="Area"/> corresponding to the specified value, or null if not found.</returns>
   public Area GetArea(string value) {
     ArgumentNullException.ThrowIfNull(value);
 

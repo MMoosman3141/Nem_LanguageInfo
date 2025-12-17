@@ -16,7 +16,7 @@ public class Dialect {
   private const string REGION_PATTERN = @"(-(?<region>[a-z]{2}|\d{3}))?";
   private const string VARIANT_PATTERN = @"(-(?<variant>[a-z0-9]{5,8}|\d[a-z0-9]{3}))?";
 
-  private static readonly Regex bc947Rgx = new($@"^{LANGUAGE_PATTERN}{SCRIPT_PATTERN}{REGION_PATTERN}{VARIANT_PATTERN}$",
+  private static readonly Regex bcp47Rgx = new($@"^{LANGUAGE_PATTERN}{SCRIPT_PATTERN}{REGION_PATTERN}{VARIANT_PATTERN}$",
     RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
   /// <summary>
@@ -48,8 +48,8 @@ public class Dialect {
   /// <param name="variant">The variant component of the dialect. Optional.</param>
   public Dialect(Language language, Area region = null, Script script = null, string variant = null) {
     Language = language;
-    Region = region ?? null;
-    Script = script ?? null;
+    Region = region;
+    Script = script;
     Variant = variant;
   }
 
@@ -73,7 +73,7 @@ public class Dialect {
   /// <param name="bcp47Code">The BCP 47 language tag representing the dialect (e.g., "en-US", "zh-Hans-CN").</param>
   /// <exception cref="ArgumentException">Thrown if the BCP 47 code is invalid or cannot be parsed.</exception>
   public Dialect(string bcp47Code) {
-    Match match = bc947Rgx.Match(bcp47Code);
+    Match match = bcp47Rgx.Match(bcp47Code);
     if (!match.Success) {
       throw new ArgumentException($"Invalid BCP 47 code: {bcp47Code}");
     }
@@ -91,7 +91,7 @@ public class Dialect {
   /// Returns the BCP 47 string representation of the dialect, including language, script, region, and variant if present.
   /// </summary>
   public override string ToString() {
-    StringBuilder sb = new(Language.Part1Code ?? Language.Part3Code);
+    StringBuilder sb = new(Language?.Part1Code ?? Language?.Part3Code ?? Languages.Instance.GetFromPart3Code("und").Part3Code);
     if (Script is not null) {
       sb.Append('-').Append(Script.Code);
     }

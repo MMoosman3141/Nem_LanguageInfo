@@ -90,10 +90,25 @@ public class Scripts {
   /// <param name="value">The script code to look up.</param>
   /// <returns>The matching <see cref="Script"/> or the default script.</returns>
   public Script GetScript(string value) {
-    ArgumentNullException.ThrowIfNull(value);
+    if (string.IsNullOrWhiteSpace(value)) {
+      return _scriptDefault;
+    }
 
-    if (GetFromCode(value) != _scriptDefault) {
-      return GetFromCode(value);
+    Script script = GetFromCode(value);
+    if (script != _scriptDefault) {
+      return script;
+    }
+
+    script = GetFromName(value);
+    if (script != _scriptDefault) {
+      return script;
+    }
+
+    if (int.TryParse(value, out int number)) {
+      script = GetFromNumber(number);
+      if (script != _scriptDefault) {
+        return script;
+      }
     }
 
     return _scriptDefault;

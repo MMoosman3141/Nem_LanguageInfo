@@ -7,25 +7,25 @@ public class Area {
   /// <summary>
   /// Gets or sets the UN M49 code for the area.
   /// </summary>
-  public string M49Code { get; set; }
+  public string M49Code { get; internal set; }
 
   /// <summary>
   /// Gets or sets the name of the area.
   /// </summary>
-  public string Name { get; set; }
+  public string Name { get; internal set; }
 
   /// <summary>
   /// Gets or sets the ISO Alpha-2 code for the area.
   /// </summary>
-  public string Alpha2Code { get; set; }
+  public string Alpha2Code { get; internal set; }
 
   /// <summary>
   /// Gets or sets the ISO Alpha-3 code for the area.
   /// </summary>
-  public string Alpha3Code { get; set; }
+  public string Alpha3Code { get; internal set; }
 
   /// <summary>
   /// Gets or sets the default language code for the area.
   /// </summary>
-  public string DefaultLanguageCode { get; set; }
+  public string DefaultLanguageCode { get; internal set; }
 }
