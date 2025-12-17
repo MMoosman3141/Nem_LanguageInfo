@@ -83,4 +83,20 @@ public class Scripts {
     return _scriptsByNumber.GetValueOrDefault(number) ?? _scriptDefault;
   }
 
+  /// <summary>
+  /// Gets the <see cref="Script"/> instance for the specified value, using code lookup.
+  /// Returns the default script if the value is null or not found.
+  /// </summary>
+  /// <param name="value">The script code to look up.</param>
+  /// <returns>The matching <see cref="Script"/> or the default script.</returns>
+  public Script GetScript(string value) {
+    ArgumentNullException.ThrowIfNull(value);
+
+    if (GetFromCode(value) != _scriptDefault) {
+      return GetFromCode(value);
+    }
+
+    return _scriptDefault;
+  }
+
 }
