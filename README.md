@@ -147,6 +147,69 @@ Console.WriteLine($"Region: {complexDialect.Region.Name}");      // Serbia
 Console.WriteLine($"BCP 47: {complexDialect}");                 // sr-Cyrl-RS
 ```
 
+#### Customizing Output with DialectOptions
+
+The `ToString(DialectOptions)` method allows you to customize which components are included in the output and how they are formatted:
+
+```csharp
+using Nem_LanguageInfo;
+
+Dialect dialect = new Dialect("zh-Hans-CN");
+
+// Default behavior (no options) - includes only language code (ISO 639-1 preferred)
+string simple = dialect.ToString(DialectOptions.None);
+// Output: "zh"
+
+// Include language and script
+string withScript = dialect.ToString(DialectOptions.Script);
+// Output: "zh-Hans"
+
+// Include language and region
+string withRegion = dialect.ToString(DialectOptions.Region);
+// Output: "zh-CN"
+
+// Include language, script, and region
+string full = dialect.ToString(DialectOptions.Script | DialectOptions.Region);
+// Output: "zh-Hans-CN"
+
+// Prefer ISO 639-3 (3-letter) language codes
+string part3 = dialect.ToString(DialectOptions.LanguagePreferPart3 | DialectOptions.Region);
+// Output: "zho-CN"
+
+// Prefer Alpha-3 country codes
+string alpha3 = dialect.ToString(DialectOptions.Region | DialectOptions.RegionPeferAlpha3);
+// Output: "zh-CHN"
+
+// Prefer UN M.49 numeric region codes
+string unM49 = dialect.ToString(DialectOptions.Region | DialectOptions.RegionPreferUnM49);
+// Output: "zh-156"
+
+// Include variant
+Dialect germanVariant = new Dialect("de-DE-1996");
+string withVariant = germanVariant.ToString(DialectOptions.Region | DialectOptions.Variant);
+// Output: "de-DE-1996"
+
+// Combine multiple options
+string allOptions = dialect.ToString(
+    DialectOptions.LanguagePreferPart3 |
+    DialectOptions.Script |
+    DialectOptions.Region |
+    DialectOptions.RegionPeferAlpha3
+);
+// Output: "zho-Hans-CHN"
+```
+
+**Available DialectOptions:**
+- `None` - Include only the language code (ISO 639-1 if available, otherwise ISO 639-3)
+- `LanguagePreferPart3` - Prefer ISO 639-3 (3-letter) language codes over ISO 639-1 (2-letter) codes
+- `Script` - Include the script component (ISO 15924 code)
+- `Region` - Include the region component (ISO 3166 Alpha-2 preferred, then Alpha-3, then UN M.49)
+- `RegionPeferAlpha3` - When including region, prefer ISO 3166-1 Alpha-3 codes over Alpha-2
+- `RegionPreferUnM49` - When including region, prefer UN M.49 numeric codes (takes precedence over `RegionPeferAlpha3`)
+- `Variant` - Include the variant component if present
+
+**Note:** Options can be combined using the bitwise OR operator (`|`).
+
 ## API Reference
 
 ### Language Class
@@ -234,7 +297,16 @@ Constructors:
 
 Methods:
 
-- `ToString()` - Returns the BCP 47 string representation of the dialect
+- `ToString()` - Returns the BCP 47 string representation of the dialect (language code only, ISO 639-1 preferred)
+- `ToString(DialectOptions options)` - Returns a customizable string representation based on specified options:
+  - `DialectOptions.None` - Language code only (default behavior)
+  - `DialectOptions.LanguagePreferPart3` - Use ISO 639-3 codes instead of ISO 639-1
+  - `DialectOptions.Script` - Include script component
+  - `DialectOptions.Region` - Include region component
+  - `DialectOptions.RegionPeferAlpha3` - Prefer Alpha-3 over Alpha-2 country codes
+  - `DialectOptions.RegionPreferUnM49` - Prefer UN M.49 numeric codes over Alpha codes
+  - `DialectOptions.Variant` - Include variant component
+  - Multiple options can be combined with the bitwise OR operator (`|`)
 
 BCP 47 Format Support:
 

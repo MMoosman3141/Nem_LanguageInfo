@@ -267,6 +267,8 @@ public class DialectTests {
 
   [Fact]
   public void ToString_WithLanguageOnly_ShouldReturnLanguageCode() {
+    string expected = "en";
+    
     // Arrange
     Dialect dialect = new("en");
 
@@ -274,11 +276,13 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.Equal("en-Latn", result);
+    Assert.Equal(expected, result);
   }
 
   [Fact]
   public void ToString_WithLanguageAndRegion_ShouldReturnBcp47Format() {
+    string expected = "en";
+
     // Arrange
     Dialect dialect = new("en", "US");
 
@@ -286,11 +290,13 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.Equal("en-Latn-US", result);
+    Assert.Equal(expected, result);
   }
 
   [Fact]
   public void ToString_WithLanguageScriptAndRegion_ShouldReturnBcp47Format() {
+    string expected = "zh";
+    
     // Arrange
     Dialect dialect = new("zh", "CN", "Hans");
 
@@ -298,11 +304,13 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.Equal("zh-Hans-CN", result);
+    Assert.Equal(expected, result);
   }
 
   [Fact]
   public void ToString_WithAllComponents_ShouldReturnBcp47Format() {
+    string expected = "en";
+
     // Arrange
     Dialect dialect = new("en", "US", "Latn", "posix");
 
@@ -310,11 +318,13 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.Equal("en-Latn-US-posix", result);
+    Assert.Equal(expected, result);
   }
 
   [Fact]
   public void ToString_WithLanguageAndScript_ShouldReturnBcp47Format() {
+    string expected = "zh";
+    
     // Arrange
     Dialect dialect = new("zh", null, "Hans");
 
@@ -322,11 +332,13 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.Equal("zh-Hans", result);
+    Assert.Equal(expected, result);
   }
 
   [Fact]
   public void ToString_WithLanguageAndVariant_ShouldReturnBcp47Format() {
+    string expected = "en";
+    
     // Arrange
     Dialect dialect = new("en", null, null, "posix");
 
@@ -334,13 +346,13 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.Equal("en-Latn-posix", result);
+    Assert.Equal(expected, result);
   }
 
   [Theory]
-  [InlineData("eng", "en-Latn")]
-  [InlineData("cmn", "cmn-Hanz")]
-  [InlineData("yue", "yue-Hant")]
+  [InlineData("eng", "en")]
+  [InlineData("cmn", "cmn")]
+  [InlineData("yue", "yue")]
   public void ToString_WithThreeLetterLanguageCode_ShouldUseThreeLetterCode(string part3Code, string expected) {
     // Arrange
     Language language = Languages.Instance.GetFromPart3Code(part3Code);
@@ -354,10 +366,10 @@ public class DialectTests {
   }
 
   [Theory]
-  [InlineData("en-US", "en-Latn-US")]
-  [InlineData("zh-Hans-CN", "zh-Hans-CN")]
-  [InlineData("fr-CA", "fr-Latn-CA")]
-  [InlineData("de-DE", "de-Latn-DE")]
+  [InlineData("en-US", "en")]
+  [InlineData("zh-Hans-CN", "zh")]
+  [InlineData("fr-CA", "fr")]
+  [InlineData("de-DE", "de")]
   public void ToString_WithVariousBcp47Codes_ShouldReturnCorrectFormat(string bcp47, string expected) {
     // Arrange
     Dialect dialect = new(bcp47);
@@ -373,13 +385,14 @@ public class DialectTests {
   public void RoundTrip_FromBcp47ToString_ShouldPreserveValue() {
     // Arrange
     string original = "en-Latn-US-posix";
+    string expected = "en";
     Dialect dialect = new(original);
 
     // Act
-    string result = dialect.ToString();
+    string actual = dialect.ToString();
 
     // Assert
-    Assert.Equal(original, result);
+    Assert.Equal(expected, actual);
   }
 
   [Theory]
@@ -482,6 +495,8 @@ public class DialectTests {
 
   [Fact]
   public void ToString_WithM49RegionCode_ShouldUseM49Code() {
+    string expected = "en";
+
     // Arrange
     Dialect dialect = new("en-840");
 
@@ -489,7 +504,7 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.True(result.Contains("840") || result.Contains("US"));
+    Assert.Equal(expected, result);
   }
 
   [Fact]
@@ -574,6 +589,8 @@ public class DialectTests {
 
   [Fact]
   public void ToString_AfterPropertyModification_ShouldReflectChanges() {
+    string expected = "en";
+
     // Arrange
     Dialect dialect = new("en");
     Area usa = Regions.Instance.GetArea("US");
@@ -583,7 +600,7 @@ public class DialectTests {
     string result = dialect.ToString();
 
     // Assert
-    Assert.Equal("en-Latn-US", result);
+    Assert.Equal(expected, result);
   }
 
   [Fact]
@@ -608,5 +625,308 @@ public class DialectTests {
 
     // Assert
     Assert.StartsWith("und", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_None_ShouldReturnLanguageOnly() {
+    // Arrange
+    Dialect dialect = new("en", "US", "Latn", "posix");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.None);
+
+    // Assert
+    Assert.Equal("en", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_Script_ShouldIncludeScript() {
+    // Arrange
+    Dialect dialect = new("zh", "CN", "Hans");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Script);
+
+    // Assert
+    Assert.Equal("zh-Hans", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_Region_ShouldIncludeRegion() {
+    // Arrange
+    Dialect dialect = new("en", "US");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region);
+
+    // Assert
+    Assert.Equal("en-US", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_Variant_ShouldIncludeVariant() {
+    // Arrange
+    Dialect dialect = new("en", null, null, "posix");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("en-posix", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_ScriptAndRegion_ShouldIncludeBoth() {
+    // Arrange
+    Dialect dialect = new("zh", "CN", "Hans");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Script | DialectOptions.Region);
+
+    // Assert
+    Assert.Equal("zh-Hans-CN", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_AllComponents_ShouldIncludeAll() {
+    // Arrange
+    Dialect dialect = new("en", "US", "Latn", "posix");
+
+    // Act
+    DialectOptions options = DialectOptions.Script | DialectOptions.Region | DialectOptions.Variant;
+    string result = dialect.ToString(options);
+
+    // Assert
+    Assert.Equal("en-Latn-US-posix", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_LanguagePreferPart3_ShouldUsePart3Code() {
+    // Arrange
+    Language language = Languages.Instance.GetLanguage("en");
+    Dialect dialect = new(language);
+
+    // Act
+    string result = dialect.ToString(DialectOptions.LanguagePreferPart3);
+
+    // Assert
+    Assert.Equal("eng", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_LanguagePreferPart3WithoutPart1_ShouldUsePart3Code() {
+    // Arrange
+    Language language = Languages.Instance.GetFromPart3Code("cmn");
+    Dialect dialect = new(language);
+
+    // Act
+    string result = dialect.ToString(DialectOptions.LanguagePreferPart3);
+
+    // Assert
+    Assert.Equal("cmn", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_RegionPreferUnM49_ShouldUseM49Code() {
+    // Arrange
+    Dialect dialect = new("en", "US");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region | DialectOptions.RegionPreferUnM49);
+
+    // Assert
+    Assert.Equal("en-840", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_RegionPreferAlpha3_ShouldUseAlpha3Code() {
+    // Arrange
+    Dialect dialect = new("en", "US");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region | DialectOptions.RegionPeferAlpha3);
+
+    // Assert
+    Assert.Equal("en-USA", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_RegionPreferUnM49AndAlpha3_ShouldPrioritizeM49() {
+    // Arrange
+    Dialect dialect = new("en", "US");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region | DialectOptions.RegionPreferUnM49 | DialectOptions.RegionPeferAlpha3);
+
+    // Assert
+    Assert.Equal("en-840", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_LanguagePreferPart3AndAllComponents_ShouldUseAllWithPart3() {
+    // Arrange
+    Dialect dialect = new("en", "US", "Latn", "posix");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.LanguagePreferPart3 | DialectOptions.Script | DialectOptions.Region | DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("eng-Latn-US-posix", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_ScriptOnly_WithoutScript_ShouldReturnLanguageOnly() {
+    // Arrange
+    Dialect dialect = new("en", "US");
+    dialect.Script = null;
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Script);
+
+    // Assert
+    Assert.Equal("en", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_RegionOnly_WithoutRegion_ShouldReturnLanguageOnly() {
+    // Arrange
+    Dialect dialect = new("en");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region);
+
+    // Assert
+    Assert.Equal("en", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_VariantOnly_WithoutVariant_ShouldReturnLanguageOnly() {
+    // Arrange
+    Dialect dialect = new("en", "US");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("en", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_RegionAndVariant_ShouldIncludeBoth() {
+    // Arrange
+    Dialect dialect = new("en", "US", null, "posix");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region | DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("en-US-posix", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_ScriptAndVariant_ShouldIncludeBoth() {
+    // Arrange
+    Dialect dialect = new("zh", null, "Hans", "variant");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Script | DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("zh-Hans-variant", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_ComplexCombination_ShouldFormatCorrectly() {
+    // Arrange
+    Dialect dialect = new("zh", "CN", "Hans", "test");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.LanguagePreferPart3 | DialectOptions.Script | DialectOptions.Region | DialectOptions.RegionPeferAlpha3 | DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("zho-Hans-CHN-test", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_M49RegionCode_WithRegionPreferUnM49_ShouldUseM49() {
+    // Arrange
+    Dialect dialect = new("en", "840");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region | DialectOptions.RegionPreferUnM49);
+
+    // Assert
+    Assert.Equal("en-840", result);
+  }
+
+  [Theory]
+  [InlineData(DialectOptions.None, "en")]
+  [InlineData(DialectOptions.Script, "en-Latn")]
+  [InlineData(DialectOptions.Region, "en-US")]
+  [InlineData(DialectOptions.Variant, "en-posix")]
+  [InlineData(DialectOptions.Script | DialectOptions.Region, "en-Latn-US")]
+  [InlineData(DialectOptions.Script | DialectOptions.Variant, "en-Latn-posix")]
+  [InlineData(DialectOptions.Region | DialectOptions.Variant, "en-US-posix")]
+  [InlineData(DialectOptions.Script | DialectOptions.Region | DialectOptions.Variant, "en-Latn-US-posix")]
+  public void ToString_WithOptions_VariousCombinations_ShouldFormatCorrectly(DialectOptions options, string expected) {
+    // Arrange
+    Dialect dialect = new("en", "US", "Latn", "posix");
+
+    // Act
+    string result = dialect.ToString(options);
+
+    // Assert
+    Assert.Equal(expected, result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_NullLanguageAndVariousFlags_ShouldUseUndetermined() {
+    // Arrange
+    Language english = Languages.Instance.GetLanguage("en");
+    Dialect dialect = new(english, Regions.Instance.GetArea("US"));
+    dialect.Language = null;
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Region | DialectOptions.Script);
+
+    // Assert
+    Assert.StartsWith("und", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_LanguageWithoutPart1Code_ShouldUsePart3() {
+    // Arrange
+    Language language = Languages.Instance.GetFromPart3Code("cmn");
+    Dialect dialect = new(language);
+
+    // Act
+    string result = dialect.ToString(DialectOptions.None);
+
+    // Assert
+    Assert.Equal("cmn", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_EmptyVariant_ShouldNotIncludeVariant() {
+    // Arrange
+    Dialect dialect = new("en", "US", "Latn", "");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("en", result);
+  }
+
+  [Fact]
+  public void ToString_WithOptions_WhitespaceVariant_ShouldNotIncludeVariant() {
+    // Arrange
+    Dialect dialect = new("en", "US", "Latn", "   ");
+
+    // Act
+    string result = dialect.ToString(DialectOptions.Variant);
+
+    // Assert
+    Assert.Equal("en", result);
   }
 }

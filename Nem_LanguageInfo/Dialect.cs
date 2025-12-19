@@ -91,25 +91,92 @@ public class Dialect {
   /// Returns the BCP 47 string representation of the dialect, including language, script, region, and variant if present.
   /// </summary>
   public override string ToString() {
-    StringBuilder sb = new();
-    if (!string.IsNullOrWhiteSpace(Language?.Part1Code)) {
-      sb.Append(Language.Part1Code);
-    } else if (!string.IsNullOrWhiteSpace(Language?.Part3Code)) {
-      sb.Append(Language.Part3Code);
-    } else {
-      sb.Append("und");
-    }
+    return ToString(DialectOptions.None);
+  }
 
-    if (Script is not null) {
+  /// <summary>
+  /// Returns the BCP 47 string representation of the dialect using the specified <see cref="DialectOptions"/>.
+  /// </summary>
+  /// <param name="options">Options that control which components (language, script, region, variant) are included in the output.</param>
+  /// <returns>A BCP 47 language tag string representing the dialect.</returns>
+  public string ToString(DialectOptions options) {
+    StringBuilder sb = new();
+
+    PopulateLanguage(sb, options);
+
+    if (options.HasFlag(DialectOptions.Script) && Script is not null) {
       sb.Append('-').Append(Script.Code);
     }
-    if (Region is not null) {
-      sb.Append('-').Append(Region.Alpha2Code ?? Region.Alpha3Code ?? Region.M49Code);
-    }
-    if (!string.IsNullOrEmpty(Variant)) {
+
+    PopulateRegion(sb, options);
+
+    if (options.HasFlag(DialectOptions.Variant) && !string.IsNullOrWhiteSpace(Variant)) {
       sb.Append('-').Append(Variant);
     }
+
     return sb.ToString();
+  }
+
+  private void PopulateLanguage(StringBuilder sb, DialectOptions options) {
+    if (options.HasFlag(DialectOptions.LanguagePreferPart3)) {
+      if (!string.IsNullOrWhiteSpace(Language?.Part3Code)) {
+        sb.Append(Language.Part3Code);
+      } else if (!string.IsNullOrWhiteSpace(Language?.Part1Code)) {
+        sb.Append(Language.Part1Code);
+      } else {
+        sb.Append("und");
+      }
+    } else {
+      if (!string.IsNullOrWhiteSpace(Language?.Part1Code)) {
+        sb.Append(Language.Part1Code);
+      } else if (!string.IsNullOrWhiteSpace(Language?.Part3Code)) {
+        sb.Append(Language.Part3Code);
+      } else {
+        sb.Append("und");
+      }
+    }
+  }
+
+  private void PopulateRegion(StringBuilder sb, DialectOptions options) {
+    if (options.HasFlag(DialectOptions.Region) && Region is not null) {
+      if (options.HasFlag(DialectOptions.RegionPreferUnM49)) {
+        if (!string.IsNullOrWhiteSpace(Region.M49Code)) {
+          sb.Append('-').Append(Region.M49Code);
+        } else {
+          if (options.HasFlag(DialectOptions.RegionPeferAlpha3)) {
+            if (!string.IsNullOrWhiteSpace(Region.Alpha3Code)) {
+              sb.Append('-').Append(Region.Alpha3Code);
+            } else if (!string.IsNullOrWhiteSpace(Region.Alpha2Code)) {
+              sb.Append('-').Append(Region.Alpha2Code);
+            }
+          } else {
+            if (!string.IsNullOrWhiteSpace(Region.Alpha2Code)) {
+              sb.Append('-').Append(Region.Alpha2Code);
+            } else if (!string.IsNullOrWhiteSpace(Region.Alpha3Code)) {
+              sb.Append('-').Append(Region.Alpha3Code);
+            }
+          }
+        }
+      } else {
+        if (options.HasFlag(DialectOptions.RegionPeferAlpha3)) {
+          if (!string.IsNullOrWhiteSpace(Region.Alpha3Code)) {
+            sb.Append('-').Append(Region.Alpha3Code);
+          } else if (!string.IsNullOrWhiteSpace(Region.Alpha2Code)) {
+            sb.Append('-').Append(Region.Alpha2Code);
+          } else if (!string.IsNullOrWhiteSpace(Region.M49Code)) {
+            sb.Append('-').Append(Region.M49Code);
+          }
+        } else {
+          if (!string.IsNullOrWhiteSpace(Region.Alpha2Code)) {
+            sb.Append('-').Append(Region.Alpha2Code);
+          } else if (!string.IsNullOrWhiteSpace(Region.Alpha3Code)) {
+            sb.Append('-').Append(Region.Alpha3Code);
+          } else if (!string.IsNullOrWhiteSpace(Region.M49Code)) {
+            sb.Append('-').Append(Region.M49Code);
+          }
+        }
+      }
+    }
   }
 
 }
