@@ -4,7 +4,7 @@ A .NET 8 library for accessing ISO 639 (languages), ISO 3166 (countries), ISO 15
 
 ## Features
 
-- **ISO 639-3 Language Data**: Access comprehensive language information including codes, names, scopes, types, and aliases
+- **ISO 639-3 Language Data**: Access comprehensive language information including codes, names, scopes, types, aliases, and language-specific end-of-sentence symbols
 - **ISO 15924 Script Data**: Retrieve script information by code, name, or number
 - **ISO 3166 Country Data**: Look up countries by Alpha-2 or Alpha-3 codes
 - **UN M.49 Region Data**: Access hierarchical geographic region information
@@ -57,6 +57,11 @@ Console.WriteLine($"Scope: {english.Scope}");
 Console.WriteLine($"Type: {english.Type}");
 Console.WriteLine($"Default Script: {english.DefaultScript}");
 Console.WriteLine($"Script Object: {english.Script.Name}");
+Console.WriteLine($"End of sentence symbols: {string.Join(", ", english.EndOfSentenceSymbols)}");
+
+// Example: language-specific punctuation (Arabic)
+Language arabic = Languages.Instance.GetFromPart3Code("ara");
+Console.WriteLine($"Arabic end-of-sentence symbols: {string.Join(", ", arabic.EndOfSentenceSymbols)}");
 ```
 
 ### Scripts
@@ -117,21 +122,21 @@ The `Dialect` class represents complete language tags including language, script
 ```csharp
 using Nem_LanguageInfo;
 
-// Parse BCP 47 language tag
-Dialect usEnglish = new Dialect("en-US");
-Dialect simplifiedChinese = new Dialect("zh-Hans-CN");
-Dialect canadianFrench = new Dialect("fr-CA");
+// Parse BCP 47 language tags (preferred explicit API)
+Dialect usEnglish = Dialect.Parse("en-US");
+Dialect simplifiedChinese = Dialect.Parse("zh-Hans-CN");
+Dialect canadianFrench = Dialect.Parse("fr-CA");
 
 // Create from objects
 Language english = Languages.Instance.GetLanguage("en");
 Area usa = Regions.Instance.GetAreaFromAlpha2("US");
 Dialect dialect1 = new Dialect(english, usa);
 
-// Create from codes
-Dialect dialect2 = new Dialect("en", "US", "Latn");
+// Create from component parts (preferred explicit API)
+Dialect dialect2 = Dialect.FromParts("en", "US", "Latn");
 
 // Create with variant
-Dialect dialect3 = new Dialect("de-DE-1996");  // German with 1996 spelling reform
+Dialect dialect3 = Dialect.Parse("de-DE-1996");  // German with 1996 spelling reform
 
 // Access dialect properties
 Console.WriteLine($"Language: {usEnglish.Language.Name}");
@@ -140,7 +145,7 @@ Console.WriteLine($"Script: {usEnglish.Script.Code}");
 Console.WriteLine($"BCP 47 Tag: {usEnglish}");  // Outputs: en-US
 
 // Complex dialects
-Dialect complexDialect = new Dialect("sr-Cyrl-RS");  // Serbian, Cyrillic, Serbia
+Dialect complexDialect = Dialect.Parse("sr-Cyrl-RS");  // Serbian, Cyrillic, Serbia
 Console.WriteLine($"Language: {complexDialect.Language.Name}");  // Serbian
 Console.WriteLine($"Script: {complexDialect.Script.Name}");      // Cyrillic
 Console.WriteLine($"Region: {complexDialect.Region.Name}");      // Serbia
@@ -154,7 +159,7 @@ The `ToString(DialectOptions)` method allows you to customize which components a
 ```csharp
 using Nem_LanguageInfo;
 
-Dialect dialect = new Dialect("zh-Hans-CN");
+Dialect dialect = Dialect.Parse("zh-Hans-CN");
 
 // Default behavior (no options) - includes only language code (ISO 639-1 preferred)
 string simple = dialect.ToString(DialectOptions.None);
@@ -185,7 +190,7 @@ string unM49 = dialect.ToString(DialectOptions.Region | DialectOptions.RegionPre
 // Output: "zh-156"
 
 // Include variant
-Dialect germanVariant = new Dialect("de-DE-1996");
+Dialect germanVariant = Dialect.Parse("de-DE-1996");
 string withVariant = germanVariant.ToString(DialectOptions.Region | DialectOptions.Variant);
 // Output: "de-DE-1996"
 
@@ -227,6 +232,7 @@ Properties:
 - `DefaultScript` - Default script code
 - `Script` - Script object for the default script
 - `Aliases` - List of alternative names
+- `EndOfSentenceSymbols` - Array of punctuation marks used as end-of-sentence symbols for the language
 
 ### Languages Class (Singleton)
 
@@ -289,11 +295,14 @@ Properties:
 - `Script` - The script component of the dialect (defaults to language's default script)
 - `Variant` - The variant component of the dialect (optional)
 
-Constructors:
+Factories and constructors:
 
-- `Dialect(string bcp47Code)` - Parse a BCP 47 language tag (e.g., "en-US", "zh-Hans-CN")
+- `Dialect.Parse(string bcp47Code)` - Parse a BCP 47 language tag (e.g., "en-US", "zh-Hans-CN")
+- `Dialect.TryParse(string bcp47Code, out Dialect dialect)` - Non-throwing BCP 47 parse
+- `Dialect.FromParts(string languageCode, string regionCode = null, string scriptCode = null, string variant = null)` - Create from component codes
 - `Dialect(Language language, Area region = null, Script script = null, string variant = null)` - Create from objects
-- `Dialect(string languageCode, string regionCode = null, string scriptCode = null, string variant = null)` - Create from codes
+
+> The two string constructors are still available for backward compatibility, but `Parse`, `TryParse`, and `FromParts` are preferred because they make caller intent explicit.
 
 Methods:
 

@@ -8,7 +8,8 @@ namespace Nem_LanguageInfo;
 /// Provides access to ISO 639 language information and lookup methods for language codes and names.
 /// </summary>
 public class Languages {
-  private const string ISO_639_RESOURCE = "Nem_LanguageInfo.Data.iso-639-3.json";
+  private const string ISO_639_NOTWRITTEN_RESOURCE = "Nem_LanguageInfo.Data.iso-639-3_NotWritten.json";
+  private const string ISO_639_WRITTEN_RESOURCE = "Nem_LanguageInfo.Data.iso-639-3_Written.json";
   private readonly Language _langDefault;
   private readonly JsonSerializerOptions _serializerOptions = new() {
     Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping,
@@ -30,11 +31,9 @@ public class Languages {
   private Languages() {
     Assembly assembly = Assembly.GetExecutingAssembly();
 
-    using Stream stream = assembly.GetManifestResourceStream(ISO_639_RESOURCE)
-    ?? throw new InvalidOperationException($"Resource '{ISO_639_RESOURCE}' not found.");
-
-    List<Language> iso639Data = JsonSerializer.Deserialize<List<Language>>(stream, _serializerOptions)
-    ?? throw new InvalidOperationException("Failed to deserialize language data.");
+    List<Language> iso639Data = [];
+    iso639Data.AddRange(ReadIso639Resource(assembly, ISO_639_NOTWRITTEN_RESOURCE));
+    iso639Data.AddRange(ReadIso639Resource(assembly, ISO_639_WRITTEN_RESOURCE));
 
     foreach (Language iso639Model in iso639Data) {
       _nameToLanguage[iso639Model.Name] = iso639Model;
@@ -60,6 +59,14 @@ public class Languages {
 
     _langDefault = _part3CodeToLanguage.GetValueOrDefault("und")
    ?? throw new InvalidOperationException("Default language 'und' not found in language data.");
+  }
+
+  private List<Language> ReadIso639Resource(Assembly assembly, string resourceName) {
+    using Stream stream = assembly.GetManifestResourceStream(resourceName)
+    ?? throw new InvalidOperationException($"Resource '{resourceName}' not found.");
+
+    return JsonSerializer.Deserialize<List<Language>>(stream, _serializerOptions)
+    ?? throw new InvalidOperationException($"Failed to deserialize language data from resource '{resourceName}'.");
   }
 
   /// <summary>

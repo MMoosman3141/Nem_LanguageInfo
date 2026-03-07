@@ -20,7 +20,7 @@ public class Regions {
 
   private readonly Dictionary<string, Area> _countriesByAlpha2 = [];
   private readonly Dictionary<string, Area> _countriesByAlpha3 = [];
-  private readonly Dictionary<string, Area> _areaByName = [];
+  private readonly Dictionary<string, Area> _areaByName = new(StringComparer.OrdinalIgnoreCase);
   private readonly Dictionary<string, Area> _areaByM49 = [];
   private readonly HierarchyTree<Area> _areaTree = [];
 
@@ -193,7 +193,9 @@ public class Regions {
   /// <param name="value">The code or name representing the region or country.</param>
   /// <returns>The <see cref="Area"/> corresponding to the specified value, or null if not found.</returns>
   public Area GetArea(string value) {
-    ArgumentNullException.ThrowIfNull(value);
+    if (string.IsNullOrWhiteSpace(value)) {
+      return null;
+    }
 
     return GetAreaFromIso3166Alpha2Code(value)
         ?? GetAreaFromIso3166Alpha3Code(value)

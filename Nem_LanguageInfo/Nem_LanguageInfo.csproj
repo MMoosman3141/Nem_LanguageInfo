@@ -2,14 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <Version>1.0.0</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Nem_LanguageInfo</Title>
     <Authors>Mark Moosman</Authors>
-    <Description>A library for finding ISO 639, ISO 3166, ISO 15924, UN M.49, and IEFT BCP 47 information</Description>
-    <Copyright>Copyright (c) 2025, Mark Moosman</Copyright>
+    <Description>A library for finding ISO 639, ISO 3166, ISO 15924, UN M.49, and IETF BCP 47 information</Description>
+    <Copyright>Copyright (c) 2026, Mark Moosman</Copyright>
     <PackageProjectUrl>https://github.com/MMoosman3141/Nem_LanguageInfo</PackageProjectUrl>
     <PackageIcon>NemAnkh_128x128.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -21,13 +22,13 @@
 
   <ItemGroup>
     <None Remove="Data\iso-15924.json" />
-    <None Remove="Data\iso-639-3.json" />
     <None Remove="Data\ISO_3166.json" />
     <None Remove="Data\un-m49.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Data\iso-639-3.json" />
+    <EmbeddedResource Include="Data\iso-639-3_NotWritten.json" />
+    <EmbeddedResource Include="Data\iso-639-3_Written.json" />
     <EmbeddedResource Include="Data\ISO_3166.json" />
     <EmbeddedResource Include="Data\iso-15924.json" />
     <EmbeddedResource Include="Data\un-m49.json" />
