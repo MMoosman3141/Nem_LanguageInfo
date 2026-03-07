@@ -1,0 +1,1788 @@
+[
+  {
+    "name": "Afrikaans",
+    "part1Code": "af",
+    "part2TCode": "afr",
+    "part2BCode": "afr",
+    "part3Code": "afr",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Amharic",
+    "part1Code": "am",
+    "part2TCode": "amh",
+    "part2BCode": "amh",
+    "part3Code": "amh",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Ethi",
+    "endOfSentenceSymbols": [
+      "።"
+    ]
+  },
+  {
+    "name": "Arabic",
+    "part1Code": "ar",
+    "part2TCode": "ara",
+    "part2BCode": "ara",
+    "part3Code": "ara",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Azerbaijani",
+    "part1Code": "az",
+    "part2TCode": "aze",
+    "part2BCode": "aze",
+    "part3Code": "aze",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Azeri"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Belarusian",
+    "part1Code": "be",
+    "part2TCode": "bel",
+    "part2BCode": "bel",
+    "part3Code": "bel",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Bengali",
+    "part1Code": "bn",
+    "part2TCode": "ben",
+    "part2BCode": "ben",
+    "part3Code": "ben",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Beng",
+    "aliases": [
+      "Bangla"
+    ],
+    "endOfSentenceSymbols": [
+      "।"
+    ]
+  },
+  {
+    "name": "Tibetan",
+    "part1Code": "bo",
+    "part2TCode": "bod",
+    "part2BCode": "tib",
+    "part3Code": "bod",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Tibt",
+    "endOfSentenceSymbols": [
+      "།",
+      "༎"
+    ]
+  },
+  {
+    "name": "Bosnian",
+    "part1Code": "bs",
+    "part2TCode": "bos",
+    "part2BCode": "bos",
+    "part3Code": "bos",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Bulgarian",
+    "part1Code": "bg",
+    "part2TCode": "bul",
+    "part2BCode": "bul",
+    "part3Code": "bul",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Catalan",
+    "part1Code": "ca",
+    "part2TCode": "cat",
+    "part2BCode": "cat",
+    "part3Code": "cat",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Valencian"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Czech",
+    "part1Code": "cs",
+    "part2TCode": "ces",
+    "part2BCode": "cze",
+    "part3Code": "ces",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Cherokee",
+    "part1Code": "",
+    "part2TCode": "chr",
+    "part2BCode": "chr",
+    "part3Code": "chr",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cher",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Mandarin Chinese",
+    "part1Code": "",
+    "part2TCode": "",
+    "part2BCode": "",
+    "part3Code": "cmn",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Hanz",
+    "aliases": [
+      "Mandarin",
+      "Standard Chinese",
+      "Guoyu"
+    ],
+    "endOfSentenceSymbols": [
+      "。",
+      "！",
+      "？"
+    ]
+  },
+  {
+    "name": "Welsh",
+    "part1Code": "cy",
+    "part2TCode": "cym",
+    "part2BCode": "wel",
+    "part3Code": "cym",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Cymraeg"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Danish",
+    "part1Code": "da",
+    "part2TCode": "dan",
+    "part2BCode": "dan",
+    "part3Code": "dan",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "German",
+    "part1Code": "de",
+    "part2TCode": "deu",
+    "part2BCode": "ger",
+    "part3Code": "deu",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Dhivehi",
+    "part1Code": "dv",
+    "part2TCode": "div",
+    "part2BCode": "div",
+    "part3Code": "div",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Thaa",
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Greek",
+    "part1Code": "el",
+    "part2TCode": "ell",
+    "part2BCode": "gre",
+    "part3Code": "ell",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Grek",
+    "aliases": [
+      "Modern Greek",
+      "Ellinika"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      ";"
+    ]
+  },
+  {
+    "name": "English",
+    "part1Code": "en",
+    "part2TCode": "eng",
+    "part2BCode": "eng",
+    "part3Code": "eng",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Estonian",
+    "part1Code": "et",
+    "part2TCode": "est",
+    "part2BCode": "est",
+    "part3Code": "est",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Basque",
+    "part1Code": "eu",
+    "part2TCode": "eus",
+    "part2BCode": "baq",
+    "part3Code": "eus",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Euskara"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Persian",
+    "part1Code": "fa",
+    "part2TCode": "fas",
+    "part2BCode": "per",
+    "part3Code": "fas",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "aliases": [
+      "Farsi"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Filipino",
+    "part1Code": "",
+    "part2TCode": "fil",
+    "part2BCode": "fil",
+    "part3Code": "fil",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Finnish",
+    "part1Code": "fi",
+    "part2TCode": "fin",
+    "part2BCode": "fin",
+    "part3Code": "fin",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Suomi"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "French",
+    "part1Code": "fr",
+    "part2TCode": "fra",
+    "part2BCode": "fre",
+    "part3Code": "fra",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Scottish Gaelic",
+    "part1Code": "gd",
+    "part2TCode": "gla",
+    "part2BCode": "gla",
+    "part3Code": "gla",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Gaelic",
+      "Gaelic Scottish",
+      "Gàidhlig",
+      "Scottish"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Irish",
+    "part1Code": "ga",
+    "part2TCode": "gle",
+    "part2BCode": "gle",
+    "part3Code": "gle",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Irish Gaelic",
+      "Gaeilge"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Galician",
+    "part1Code": "gl",
+    "part2TCode": "glg",
+    "part2BCode": "glg",
+    "part3Code": "glg",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Gujarati",
+    "part1Code": "gu",
+    "part2TCode": "guj",
+    "part2BCode": "guj",
+    "part3Code": "guj",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Gujr",
+    "endOfSentenceSymbols": [
+      "."
+    ]
+  },
+  {
+    "name": "Hausa",
+    "part1Code": "ha",
+    "part2TCode": "hau",
+    "part2BCode": "hau",
+    "part3Code": "hau",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Serbo-Croatian",
+    "part1Code": "sh",
+    "part2TCode": "",
+    "part2BCode": "",
+    "part3Code": "hbs",
+    "scope": "M",
+    "type": "L",
+    "comment": "Code element for 639-1 has been deprecated",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Hebrew",
+    "part1Code": "he",
+    "part2TCode": "heb",
+    "part2BCode": "heb",
+    "part3Code": "heb",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Hebr",
+    "aliases": [
+      "Ivrit"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Hindi",
+    "part1Code": "hi",
+    "part2TCode": "hin",
+    "part2BCode": "hin",
+    "part3Code": "hin",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Deva",
+    "endOfSentenceSymbols": [
+      "।",
+      "॥"
+    ]
+  },
+  {
+    "name": "Croatian",
+    "part1Code": "hr",
+    "part2TCode": "hrv",
+    "part2BCode": "hrv",
+    "part3Code": "hrv",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Hungarian",
+    "part1Code": "hu",
+    "part2TCode": "hun",
+    "part2BCode": "hun",
+    "part3Code": "hun",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Magyar"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Armenian",
+    "part1Code": "hy",
+    "part2TCode": "hye",
+    "part2BCode": "arm",
+    "part3Code": "hye",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Armn",
+    "aliases": [
+      "Hayeren"
+    ],
+    "endOfSentenceSymbols": [
+      "։",
+      "՞",
+      "՜"
+    ]
+  },
+  {
+    "name": "Igbo",
+    "part1Code": "ig",
+    "part2TCode": "ibo",
+    "part2BCode": "ibo",
+    "part3Code": "ibo",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Sichuan Yi",
+    "part1Code": "ii",
+    "part2TCode": "iii",
+    "part2BCode": "iii",
+    "part3Code": "iii",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Yiii",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Indonesian",
+    "part1Code": "id",
+    "part2TCode": "ind",
+    "part2BCode": "ind",
+    "part3Code": "ind",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Bahasa Indonesia"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Icelandic",
+    "part1Code": "is",
+    "part2TCode": "isl",
+    "part2BCode": "ice",
+    "part3Code": "isl",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Italian",
+    "part1Code": "it",
+    "part2TCode": "ita",
+    "part2BCode": "ita",
+    "part3Code": "ita",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Javanese",
+    "part1Code": "jv",
+    "part2TCode": "jav",
+    "part2BCode": "jav",
+    "part3Code": "jav",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Japanese",
+    "part1Code": "ja",
+    "part2TCode": "jpn",
+    "part2BCode": "jpn",
+    "part3Code": "jpn",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Jpan",
+    "aliases": [
+      "Nihongo",
+      "Nippon-go"
+    ],
+    "endOfSentenceSymbols": [
+      "。",
+      "？",
+      "！"
+    ]
+  },
+  {
+    "name": "Kannada",
+    "part1Code": "kn",
+    "part2TCode": "kan",
+    "part2BCode": "kan",
+    "part3Code": "kan",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Knda",
+    "endOfSentenceSymbols": [
+      "."
+    ]
+  },
+  {
+    "name": "Kashmiri",
+    "part1Code": "ks",
+    "part2TCode": "kas",
+    "part2BCode": "kas",
+    "part3Code": "kas",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Georgian",
+    "part1Code": "ka",
+    "part2TCode": "kat",
+    "part2BCode": "geo",
+    "part3Code": "kat",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Geor",
+    "aliases": [
+      "Kartuli",
+      "Kartvelian"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Kazakh",
+    "part1Code": "kk",
+    "part2TCode": "kaz",
+    "part2BCode": "kaz",
+    "part3Code": "kaz",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Khmer",
+    "part1Code": "km",
+    "part2TCode": "khm",
+    "part2BCode": "khm",
+    "part3Code": "khm",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Khmr",
+    "aliases": [
+      "Cambodian"
+    ],
+    "endOfSentenceSymbols": [
+      "។",
+      "៕"
+    ]
+  },
+  {
+    "name": "Kirghiz",
+    "part1Code": "ky",
+    "part2TCode": "kir",
+    "part2BCode": "kir",
+    "part3Code": "kir",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "aliases": [
+      "Kyrgyz"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Korean",
+    "part1Code": "ko",
+    "part2TCode": "kor",
+    "part2BCode": "kor",
+    "part3Code": "kor",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Kore",
+    "aliases": [
+      "South Korean",
+      "North Korean",
+      "Hangugeo"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Kurdish",
+    "part1Code": "ku",
+    "part2TCode": "kur",
+    "part2BCode": "kur",
+    "part3Code": "kur",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Lao",
+    "part1Code": "lo",
+    "part2TCode": "lao",
+    "part2BCode": "lao",
+    "part3Code": "lao",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Laoo",
+    "aliases": [
+      "Laotian"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Latvian",
+    "part1Code": "lv",
+    "part2TCode": "lav",
+    "part2BCode": "lav",
+    "part3Code": "lav",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Lettish"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Lithuanian",
+    "part1Code": "lt",
+    "part2TCode": "lit",
+    "part2BCode": "lit",
+    "part3Code": "lit",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Malayalam",
+    "part1Code": "ml",
+    "part2TCode": "mal",
+    "part2BCode": "mal",
+    "part3Code": "mal",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Mlym",
+    "endOfSentenceSymbols": [
+      "."
+    ]
+  },
+  {
+    "name": "Marathi",
+    "part1Code": "mr",
+    "part2TCode": "mar",
+    "part2BCode": "mar",
+    "part3Code": "mar",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Deva",
+    "endOfSentenceSymbols": [
+      "।",
+      "॥"
+    ]
+  },
+  {
+    "name": "Macedonian",
+    "part1Code": "mk",
+    "part2TCode": "mkd",
+    "part2BCode": "mac",
+    "part3Code": "mkd",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Mongolian",
+    "part1Code": "mn",
+    "part2TCode": "mon",
+    "part2BCode": "mon",
+    "part3Code": "mon",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Malay",
+    "part1Code": "ms",
+    "part2TCode": "msa",
+    "part2BCode": "may",
+    "part3Code": "msa",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Malaysian",
+      "Bahasa Melayu"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Burmese",
+    "part1Code": "my",
+    "part2TCode": "mya",
+    "part2BCode": "bur",
+    "part3Code": "mya",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Mymr",
+    "aliases": [
+      "Myanmar"
+    ],
+    "endOfSentenceSymbols": [
+      "။",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Nepali (macrolanguage)",
+    "part1Code": "ne",
+    "part2TCode": "nep",
+    "part2BCode": "nep",
+    "part3Code": "nep",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Deva",
+    "endOfSentenceSymbols": [
+      "।",
+      "॥"
+    ]
+  },
+  {
+    "name": "Dutch",
+    "part1Code": "nl",
+    "part2TCode": "nld",
+    "part2BCode": "dut",
+    "part3Code": "nld",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Flemish",
+      "Netherlandic"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Norwegian Nynorsk",
+    "part1Code": "nn",
+    "part2TCode": "nno",
+    "part2BCode": "nno",
+    "part3Code": "nno",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Norwegian Bokmål",
+    "part1Code": "nb",
+    "part2TCode": "nob",
+    "part2BCode": "nob",
+    "part3Code": "nob",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Norwegian",
+    "part1Code": "no",
+    "part2TCode": "nor",
+    "part2BCode": "nor",
+    "part3Code": "nor",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Oriya",
+    "part1Code": "or",
+    "part2TCode": "ori",
+    "part2BCode": "ori",
+    "part3Code": "ori",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Orya",
+    "aliases": [
+      "Odia"
+    ],
+    "endOfSentenceSymbols": [
+      "।"
+    ]
+  },
+  {
+    "name": "Panjabi",
+    "part1Code": "pa",
+    "part2TCode": "pan",
+    "part2BCode": "pan",
+    "part3Code": "pan",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Guru",
+    "aliases": [
+      "Punjabi"
+    ],
+    "endOfSentenceSymbols": [
+      "।"
+    ]
+  },
+  {
+    "name": "Polish",
+    "part1Code": "pl",
+    "part2TCode": "pol",
+    "part2BCode": "pol",
+    "part3Code": "pol",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Portuguese",
+    "part1Code": "pt",
+    "part2TCode": "por",
+    "part2BCode": "por",
+    "part3Code": "por",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Pushto",
+    "part1Code": "ps",
+    "part2TCode": "pus",
+    "part2BCode": "pus",
+    "part3Code": "pus",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "aliases": [
+      "Pashto",
+      "Pushtu",
+      "Pakhto",
+      "Pukhto",
+      "Afghan"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Romanian",
+    "part1Code": "ro",
+    "part2TCode": "ron",
+    "part2BCode": "rum",
+    "part3Code": "ron",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Russian",
+    "part1Code": "ru",
+    "part2TCode": "rus",
+    "part2BCode": "rus",
+    "part3Code": "rus",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Sanskrit",
+    "part1Code": "sa",
+    "part2TCode": "san",
+    "part2BCode": "san",
+    "part3Code": "san",
+    "scope": "M",
+    "type": "H",
+    "comment": "",
+    "defaultScript": "Deva",
+    "endOfSentenceSymbols": [
+      "।",
+      "॥"
+    ]
+  },
+  {
+    "name": "Sinhala",
+    "part1Code": "si",
+    "part2TCode": "sin",
+    "part2BCode": "sin",
+    "part3Code": "sin",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Sinh",
+    "aliases": [
+      "Sinhalese"
+    ],
+    "endOfSentenceSymbols": [
+      "."
+    ]
+  },
+  {
+    "name": "Slovak",
+    "part1Code": "sk",
+    "part2TCode": "slk",
+    "part2BCode": "slo",
+    "part3Code": "slk",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Slovenian",
+    "part1Code": "sl",
+    "part2TCode": "slv",
+    "part2BCode": "slv",
+    "part3Code": "slv",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Slovene"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Sindhi",
+    "part1Code": "sd",
+    "part2TCode": "snd",
+    "part2BCode": "snd",
+    "part3Code": "snd",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Spanish",
+    "part1Code": "es",
+    "part2TCode": "spa",
+    "part2BCode": "spa",
+    "part3Code": "spa",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Castilian"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Albanian",
+    "part1Code": "sq",
+    "part2TCode": "sqi",
+    "part2BCode": "alb",
+    "part3Code": "sqi",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Shqip"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Serbian",
+    "part1Code": "sr",
+    "part2TCode": "srp",
+    "part2BCode": "srp",
+    "part3Code": "srp",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Sundanese",
+    "part1Code": "su",
+    "part2TCode": "sun",
+    "part2BCode": "sun",
+    "part3Code": "sun",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Swahili",
+    "part1Code": "sw",
+    "part2TCode": "swa",
+    "part2BCode": "swa",
+    "part3Code": "swa",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "Kiswahili"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Swedish",
+    "part1Code": "sv",
+    "part2TCode": "swe",
+    "part2BCode": "swe",
+    "part3Code": "swe",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Tamil",
+    "part1Code": "ta",
+    "part2TCode": "tam",
+    "part2BCode": "tam",
+    "part3Code": "tam",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Taml",
+    "endOfSentenceSymbols": [
+      "."
+    ]
+  },
+  {
+    "name": "Telugu",
+    "part1Code": "te",
+    "part2TCode": "tel",
+    "part2BCode": "tel",
+    "part3Code": "tel",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Telu",
+    "endOfSentenceSymbols": [
+      "."
+    ]
+  },
+  {
+    "name": "Tajik",
+    "part1Code": "tg",
+    "part2TCode": "tgk",
+    "part2BCode": "tgk",
+    "part3Code": "tgk",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Tagalog",
+    "part1Code": "tl",
+    "part2TCode": "tgl",
+    "part2BCode": "tgl",
+    "part3Code": "tgl",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Thai",
+    "part1Code": "th",
+    "part2TCode": "tha",
+    "part2BCode": "tha",
+    "part3Code": "tha",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Thai",
+    "aliases": [
+      "Siamese"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Turkmen",
+    "part1Code": "tk",
+    "part2TCode": "tuk",
+    "part2BCode": "tuk",
+    "part3Code": "tuk",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Turkish",
+    "part1Code": "tr",
+    "part2TCode": "tur",
+    "part2BCode": "tur",
+    "part3Code": "tur",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Uighur",
+    "part1Code": "ug",
+    "part2TCode": "uig",
+    "part2BCode": "uig",
+    "part3Code": "uig",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Ukrainian",
+    "part1Code": "uk",
+    "part2TCode": "ukr",
+    "part2BCode": "ukr",
+    "part3Code": "ukr",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Cyrl",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Urdu",
+    "part1Code": "ur",
+    "part2TCode": "urd",
+    "part2BCode": "urd",
+    "part3Code": "urd",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Arab",
+    "endOfSentenceSymbols": [
+      ".",
+      "؟",
+      "!"
+    ]
+  },
+  {
+    "name": "Uzbek",
+    "part1Code": "uz",
+    "part2TCode": "uzb",
+    "part2BCode": "uzb",
+    "part3Code": "uzb",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Vai",
+    "part1Code": "",
+    "part2TCode": "vai",
+    "part2BCode": "vai",
+    "part3Code": "vai",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Vaii",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Vietnamese",
+    "part1Code": "vi",
+    "part2TCode": "vie",
+    "part2BCode": "vie",
+    "part3Code": "vie",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Xhosa",
+    "part1Code": "xh",
+    "part2TCode": "xho",
+    "part2BCode": "xho",
+    "part3Code": "xho",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "IsiXhosa"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Yiddish",
+    "part1Code": "yi",
+    "part2TCode": "yid",
+    "part2BCode": "yid",
+    "part3Code": "yid",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Hebr",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!"
+    ]
+  },
+  {
+    "name": "Yoruba",
+    "part1Code": "yo",
+    "part2TCode": "yor",
+    "part2BCode": "yor",
+    "part3Code": "yor",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  },
+  {
+    "name": "Yue Chinese",
+    "part1Code": "",
+    "part2TCode": "",
+    "part2BCode": "",
+    "part3Code": "yue",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Hant",
+    "aliases": [
+      "Cantonese"
+    ],
+    "endOfSentenceSymbols": [
+      "。",
+      "？",
+      "！"
+    ]
+  },
+  {
+    "name": "Chinese",
+    "part1Code": "zh",
+    "part2TCode": "zho",
+    "part2BCode": "chi",
+    "part3Code": "zho",
+    "scope": "M",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Hani",
+    "aliases": [
+      "Putonghua"
+    ],
+    "endOfSentenceSymbols": [
+      "。",
+      "？",
+      "！"
+    ]
+  },
+  {
+    "name": "Zulu",
+    "part1Code": "zu",
+    "part2TCode": "zul",
+    "part2BCode": "zul",
+    "part3Code": "zul",
+    "scope": "I",
+    "type": "L",
+    "comment": "",
+    "defaultScript": "Latn",
+    "aliases": [
+      "isiZulu"
+    ],
+    "endOfSentenceSymbols": [
+      ".",
+      "?",
+      "!",
+      "..."
+    ]
+  }
+]

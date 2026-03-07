@@ -67,6 +67,12 @@ public sealed class Language() {
   public List<string> Aliases { get; private set; }
 
   /// <summary>
+  /// Gets the end-of-sentence symbols commonly used by the language.
+  /// </summary>
+  [JsonPropertyName("endOfSentenceSymbols")]
+  public string[] EndOfSentenceSymbols { get; private set; }
+
+  /// <summary>
   /// Gets the script object associated with the default script code.
   /// </summary>
   [JsonIgnore]
@@ -79,7 +85,7 @@ public sealed class Language() {
   public Language(
     string name, string part1Code, string part2TCode,
     string part2BCode, string part3Code, string scope,
-    string type, string comment, string defaultScript, List<string> aliases) :
+    string type, string comment, string defaultScript, List<string> aliases, string[] endOfSentenceSymbols) :
     this() {
 
     this.Name = name;
@@ -92,5 +98,6 @@ public sealed class Language() {
     this.Comment = comment;
     this.DefaultScript = defaultScript;
     this.Aliases = aliases ?? [];
+    this.EndOfSentenceSymbols = endOfSentenceSymbols ?? [];
   }
 }

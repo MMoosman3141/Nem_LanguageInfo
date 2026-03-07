@@ -30,12 +30,39 @@ public class RegionsTests {
   }
 
   [Fact]
+  public void GetAreaFromName_WithDifferentCase_ShouldReturnCorrectArea() {
+    // Arrange
+    Regions regions = Regions.Instance;
+
+    // Act
+    Area usa = regions.GetAreaFromName("united states of america");
+
+    // Assert
+    Assert.NotNull(usa);
+    Assert.Equal("US", usa.Alpha2Code);
+    Assert.Equal("USA", usa.Alpha3Code);
+    Assert.Equal("United States of America", usa.Name);
+  }
+
+  [Fact]
   public void GetAreaFromIso3166Alpha2Code_WithInvalidCode_ShouldReturnNull() {
     // Arrange
     Regions regions = Regions.Instance;
 
     // Act
     Area result = regions.GetAreaFromIso3166Alpha2Code("ZZ");
+
+    // Assert
+    Assert.Null(result);
+  }
+
+  [Fact]
+  public void GetArea_WithNullValue_ShouldReturnNull() {
+    // Arrange
+    Regions regions = Regions.Instance;
+
+    // Act
+    Area result = regions.GetArea(null);
 
     // Assert
     Assert.Null(result);

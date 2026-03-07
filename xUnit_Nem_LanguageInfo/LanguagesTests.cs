@@ -27,6 +27,8 @@ public class LanguagesTests {
     Assert.Equal("English", english.Name);
     Assert.Equal("en", english.Part1Code);
     Assert.Equal("eng", english.Part3Code);
+    Assert.NotNull(english.EndOfSentenceSymbols);
+    Assert.Contains(".", english.EndOfSentenceSymbols);
   }
 
   [Fact]
@@ -54,6 +56,7 @@ public class LanguagesTests {
     // Assert
     Assert.NotNull(result);
     Assert.Equal("und", result.Part3Code);
+    Assert.NotNull(result.EndOfSentenceSymbols);
   }
 
   [Fact]
@@ -313,5 +316,54 @@ public class LanguagesTests {
     Assert.NotNull(english.Scope);
     Assert.NotNull(english.Type);
     Assert.NotNull(english.Aliases);
+    Assert.NotNull(english.EndOfSentenceSymbols);
+  }
+
+  [Theory]
+  [InlineData("eng", ".")]
+  [InlineData("fra", ".")]
+  [InlineData("ara", "؟")]
+  public void GetFromPart3Code_WithWrittenLanguages_ShouldReturnExpectedEndOfSentenceSymbols(string part3Code, string expectedSymbol) {
+    // Arrange
+    Languages languages = Languages.Instance;
+
+    // Act
+    Language language = languages.GetFromPart3Code(part3Code);
+
+    // Assert
+    Assert.NotNull(language);
+    Assert.NotNull(language.EndOfSentenceSymbols);
+    Assert.NotEmpty(language.EndOfSentenceSymbols);
+    Assert.Contains(expectedSymbol, language.EndOfSentenceSymbols);
+  }
+
+  [Fact]
+  public void GetFromPart3Code_WithNotWrittenLanguage_ShouldReturnEmptyEndOfSentenceSymbols() {
+    // Arrange
+    Languages languages = Languages.Instance;
+
+    // Act
+    Language language = languages.GetFromPart3Code("aaa");
+
+    // Assert
+    Assert.NotNull(language);
+    Assert.Equal("aaa", language.Part3Code);
+    Assert.NotNull(language.EndOfSentenceSymbols);
+    Assert.Empty(language.EndOfSentenceSymbols);
+  }
+
+  [Fact]
+  public void GetFromPart3Code_WithUnknownLanguage_ShouldReturnDefaultLanguageWithEmptyEndOfSentenceSymbols() {
+    // Arrange
+    Languages languages = Languages.Instance;
+
+    // Act
+    Language language = languages.GetFromPart3Code("zzz");
+
+    // Assert
+    Assert.NotNull(language);
+    Assert.Equal("und", language.Part3Code);
+    Assert.NotNull(language.EndOfSentenceSymbols);
+    Assert.Empty(language.EndOfSentenceSymbols);
   }
 }

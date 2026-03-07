@@ -305,4 +305,39 @@ public class ScriptsTests {
     Assert.Equal("LTR", latin.Directionality); // Left-to-Right
     Assert.Equal("RTL", arabic.Directionality); // Right-to-Left
   }
+
+  [Theory]
+  [InlineData("Latn", "Latn")]
+  [InlineData("Latin", "Latn")]
+  [InlineData("215", "Latn")]
+  public void GetScript_WithCodeNameOrNumber_ShouldResolveScript(string value, string expectedCode) {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
+
+    // Act
+    Script result = scripts.GetScript(value);
+
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal(expectedCode, result.Code);
+  }
+
+  [Theory]
+  [InlineData(null)]
+  [InlineData("")]
+  [InlineData("   ")]
+  [InlineData("9999")]
+  [InlineData("NotARealScript")]
+  public void GetScript_WithInvalidInput_ShouldReturnUnknownScript(string value) {
+    // Arrange
+    Scripts scripts = Scripts.Instance;
+
+    // Act
+    Script result = scripts.GetScript(value);
+
+    // Assert
+    Assert.NotNull(result);
+    Assert.Equal("Zzzz", result.Code);
+    Assert.Equal(999, result.Number);
+  }
 }
